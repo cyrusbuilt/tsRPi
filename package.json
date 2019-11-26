@@ -1,0 +1,53 @@
+{
+  "name": "tsrpi",
+  "version": "1.0.0",
+  "description": "Raspberry Pi framework for TypeScript / NodeJS",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "test": "jest --config jestconfig.json",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "docs": "typedoc --tsconfig ./tsconfig.json --out ./docs ./src",
+    "clean": "rm -rfv ./build && rm -rfv ./docs && rm -rfv ./dist && rm -rfv ./coverage",
+    "bundle": "webpack --config ./webpack.config.js",
+    "build-all": "npm run clean && npm run lint && npm run format && npm run test && npm run build && npm run docs && npm run bundle"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cyrusbuilt/tsRPi.git"
+  },
+  "keywords": [
+    "Raspberry",
+    "Pi"
+  ],
+  "author": "cyrusbuilt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cyrusbuilt/tsRPi/issues"
+  },
+  "homepage": "https://github.com/cyrusbuilt/tsRPi#readme",
+  "devDependencies": {
+    "@types/jest": "^24.0.23",
+    "jest": "^24.9.0",
+    "jest-diff": "^24.9.0",
+    "prettier": "^1.19.1",
+    "ts-jest": "^24.2.0",
+    "ts-loader": "^6.2.1",
+    "tslint": "^5.20.1",
+    "tslint-config-prettier": "^1.18.0",
+    "typedoc": "^0.15.3",
+    "typescript": "^3.7.2",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "@types/node": "^12.12.12",
+    "@babel/parser": "^7.7.4",
+    "@babel/types": "^7.7.4"
+  }
+}
