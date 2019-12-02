@@ -4,15 +4,17 @@
  */
 export default interface IDisposable {
   /**
+   * In subclasses, determines whether or not the current instance has been
+   * disposed.
+   * @return true if disposed; Otherwise, false.
+   * @property
+   * @readonly
+   */
+  isDisposed: boolean;
+
+  /**
    * In subclasses, performs application-defined tasks associated with freeing,
    * releasing, or resetting resources.
    */
   dispose(): void;
-
-  /**
-   * In subclasses, determines whether or not the current instance has been
-   * disposed.
-   * @return true if disposed; Otherwise, false.
-   */
-  isDisposed(): boolean;
 }
