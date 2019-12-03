@@ -33,7 +33,11 @@ export default class ExecUtils {
     let result: string[] = [];
     const cmdSpawn = exec.spawnSync(command, args.split(StringUtils.DEFAULT_PAD_CHAR));
     if (cmdSpawn.status === 0) {
-      result = cmdSpawn.stdout.split('\n');
+      if (typeof cmdSpawn.stdout === 'string') {
+        result = (cmdSpawn.stdout as string).split('\n');
+      } else {
+        result = (cmdSpawn.stdout as Buffer).toString().split('\n');
+      }
     }
 
     return result;
