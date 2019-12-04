@@ -186,10 +186,10 @@ export default class GpioStandard extends GpioBase {
   public async dispose() {
     await this.unexportPin(this.innerPin);
     if (this.isPwmPin) {
-        const cmd = `gpio unexport ${this.innerPin.valueOf()}`;
-        await ExecUtils.executeCommand(cmd);
+      const cmd = `gpio unexport ${this.innerPin.valueOf()}`;
+      await ExecUtils.executeCommand(cmd);
     }
-    
+
     await this.write(PinState.LOW);
     super.dispose();
   }
