@@ -12,7 +12,7 @@ export default class ExecUtils {
    * @param command The command to execute.
    * @return        A string array containing each line of the output.
    */
-  public static async executCommand(command: string | null | undefined) {
+  public static async executeCommand(command: string | null | undefined) {
     if (util.isNullOrUndefined(command)) {
       return [];
     }

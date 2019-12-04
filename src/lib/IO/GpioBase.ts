@@ -16,25 +16,25 @@ import PinStateChangeEvent, {
  * @extends [[EventEmitter.EventEmitter]]
  * @implements [[IRaspiGpio]]
  */
-export default abstract class GpioBase extends EventEmitter.EventEmitter implements IRaspiGpio {
+export default class GpioBase extends EventEmitter.EventEmitter implements IRaspiGpio {
   /**
    * The pin state change event name.
    * @event
    */
   public static readonly EVENT_STATE_CHANGED = 'pinStateChanged';
 
+  protected pinState: PinState;
+  protected pinPwm: number;
+  protected pinPwmRange: number;
   private pin: GpioPins;
   private pinMode: PinMode;
   private initValue: PinState;
-  private pinState: PinState;
   private disposed: boolean;
   private boardRevision: BoardRevision;
   private pinTag: any;
-  private pinPwm: number;
-  private pinPwmRange: number;
 
   /**
-   * Initalizes a new instance of the jsrpi.IO.GpioBase class with the pin the
+   * Initalizes a new instance of the [[GpioBase]] class with the pin the
    * GPIO is assigned to, the pin mode, and initial value.
    * @param pin The GPIO pin.
    * @param mode The I/O pin mode.
@@ -221,6 +221,7 @@ export default abstract class GpioBase extends EventEmitter.EventEmitter impleme
    * Write a value to the pin.
    * @param ps The pin state value to write to the pin.
    * @throws [[ObjectDisposedException]] if this instance has been disposed.
+   * @override
    */
   public async write(ps: PinState) {
     if (this.isDisposed) {
@@ -246,8 +247,8 @@ export default abstract class GpioBase extends EventEmitter.EventEmitter impleme
 
   /**
    * Provisions the I/O pin. See http://wiringpi.com/reference/raspberry-pi-specifics/
-   * @override
    * @throws [[ObjectDisposedException]] if this instance has been disposed.
+   * @override
    */
   public async provision() {
     return await this.write(this.initValue);
@@ -287,7 +288,7 @@ export default abstract class GpioBase extends EventEmitter.EventEmitter impleme
   }
 
   /**
-   * performs application-defined tasks associated with freeing,
+   * Performs application-defined tasks associated with freeing,
    * releasing, or resetting resources.
    * @override
    */
@@ -304,5 +305,5 @@ export default abstract class GpioBase extends EventEmitter.EventEmitter impleme
   }
 
   // TODO probably move this to coreutils/systemutils
-  private delay = (ms: number) => new Promise(res => setTimeout(res, ms));
+  protected delay = (ms: number) => new Promise(res => setTimeout(res, ms));
 }
