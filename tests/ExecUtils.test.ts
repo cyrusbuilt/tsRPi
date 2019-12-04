@@ -11,7 +11,7 @@ test("executeCommand(): ping executes successfully.", async () => {
     }
 
     const empty: string[] = [];
-    const result = await ExecUtils.executCommand(cmd);
+    const result = await ExecUtils.executeCommand(cmd);
     expect(StringUtils.contains(result.toString(), text)).toBeTruthy();
-    expect(await ExecUtils.executCommand(null)).toStrictEqual(empty);
+    expect(await ExecUtils.executeCommand(null)).toStrictEqual(empty);
 });

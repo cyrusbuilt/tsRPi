@@ -11,3 +11,5 @@ export * from './PinPollFailEvent';
 export * from './PinPullResistance';
 export * from './PinState';
 export * from './PinStateChangeEvent';
+export * from './Pwm';
+export * from './UnrecognizedPinFoundEvent';
