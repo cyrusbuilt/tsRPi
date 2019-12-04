@@ -19,3 +19,13 @@ addons:
 
 script:
   - npm run build-ci
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  on:
+    branch: master
+
+before_deploy:
+  - sed -i '/doc/d' .gitignore
