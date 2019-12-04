@@ -5,7 +5,7 @@
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "scripts": {
-    "test": "jest --config jestconfig.json",
+    "test": "jest --config jestconfig.json && cat ./coverage/lcov.info | coveralls",
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "tslint -p tsconfig.json",
@@ -34,6 +34,7 @@
   "homepage": "https://github.com/cyrusbuilt/tsRPi#readme",
   "devDependencies": {
     "@types/jest": "^24.0.23",
+    "coveralls": "^3.0.9",
     "jest": "^24.9.0",
     "jest-diff": "^24.9.0",
     "prettier": "^1.19.1",
