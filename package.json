@@ -16,7 +16,7 @@
     "clean": "rm -rfv ./build && rm -rfv ./docs && rm -rfv ./dist && rm -rfv ./coverage",
     "bundle": "webpack --config ./webpack.config.js",
     "build-all": "npm run clean && npm run lint && npm run format && npm run test && npm run build && npm run docs && npm run bundle",
-    "build-ci": "npm run lint && npm run format && npm run test && npm run build && npm run bundle"
+    "build-ci": "npm run lint && npm run format && npm run test && npm run build && npm run docs"
   },
   "repository": {
     "type": "git",
