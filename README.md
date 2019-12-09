@@ -5,4 +5,4 @@
 
 Raspberry Pi library for TypeScript / NodeJS.
 
-See [API Documentation](https://cyrusbuilt.github.io/tsRPi/doc/index.html)
+See [API Documentation](https://cyrusbuilt.github.io/tsRPi/doc/globals.html)
