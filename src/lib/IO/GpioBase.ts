@@ -91,7 +91,7 @@ export default class GpioBase extends EventEmitter.EventEmitter implements IRasp
     return {
       remove() {
         evt.removeListener(GpioBase.EVENT_STATE_CHANGED, listener);
-      },
+      }
     } as IPinStateChangeEventSubscription;
   }
 
