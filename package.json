@@ -17,7 +17,7 @@
     "clean": "rm -rfv ./build && rm -rfv ./doc && rm -rfv ./dist && rm -rfv ./coverage",
     "bundle": "webpack --config ./webpack.config.js",
     "build-all": "npm run clean && npm run lint && npm run format && npm run test && npm run build && npm run docs && npm run bundle",
-    "build-ci": "npm run lint && npm run format && npm run coveralls && npm run build && npm run docs"
+    "build-ci": "npm run lint && npm run coveralls && npm run build && npm run docs"
   },
   "repository": {
     "type": "git",
@@ -51,8 +51,10 @@
   "dependencies": {
     "@babel/parser": "^7.7.4",
     "@babel/types": "^7.7.4",
+    "@types/i2c-bus": "^1.0.27",
     "@types/node": "^12.12.12",
     "@types/pi-spi": "0.0.28",
+    "i2c-bus": "^5.1.0",
     "pi-spi": "^1.2.1"
   }
 }
