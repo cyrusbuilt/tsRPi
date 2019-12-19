@@ -54,7 +54,9 @@
     "@types/i2c-bus": "^1.0.27",
     "@types/node": "^12.12.12",
     "@types/pi-spi": "0.0.28",
+    "@types/serialport": "^7.0.4",
     "i2c-bus": "^5.1.0",
-    "pi-spi": "^1.2.1"
+    "pi-spi": "^1.2.1",
+    "serialport": "^8.0.5"
   }
 }

@@ -1,7 +1,7 @@
 # tsRPi
 
 [![Build Status](https://travis-ci.com/cyrusbuilt/tsRPi.svg?branch=master)](https://travis-ci.com/cyrusbuilt/tsRPi)
-[![Coverage Status](https://coveralls.io/repos/github/cyrusbuilt/tsRPi/badge.svg)](https://coveralls.io/github/cyrusbuilt/tsRPi)
+[![Coverage Status](https://coveralls.io/repos/github/cyrusbuilt/tsRPi/badge.svg?branch=master)](https://coveralls.io/github/cyrusbuilt/tsRPi?branch=master)
 
 Raspberry Pi library for TypeScript / NodeJS.
 
