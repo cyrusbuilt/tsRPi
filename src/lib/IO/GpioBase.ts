@@ -1,5 +1,6 @@
 import * as EventEmitter from 'events';
 import * as Util from 'util';
+import CoreUtils from '../../lib/PiSystem/CoreUtils';
 import { BoardRevision } from '../BoardRevision';
 import ObjectDisposedException from '../ObjectDisposedException';
 import { GpioPins } from './GpioPins';
@@ -275,7 +276,7 @@ export default class GpioBase extends EventEmitter.EventEmitter implements IRasp
     }
 
     await this.write(PinState.HIGH);
-    await this.delay(millis);
+    await CoreUtils.delay(millis);
     await this.write(PinState.LOW);
   }
 
@@ -303,7 +304,4 @@ export default class GpioBase extends EventEmitter.EventEmitter implements IRasp
     this.initValue = PinState.LOW;
     this.disposed = true;
   }
-
-  // TODO probably move this to coreutils/systemutils
-  protected delay = (ms: number) => new Promise(res => setTimeout(res, ms));
 }
