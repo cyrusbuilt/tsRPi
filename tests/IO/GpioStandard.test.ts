@@ -29,7 +29,7 @@ test("Should construct with and with or without params", () => {
 test("Can change pwm value", () => {
     const result: string[] = [];
     const mockedExecUtils = mocked(ExecUtils, true);
-    mockedExecUtils.mockReturnValue(Promise.resolve(result));
+    mockedExecUtils.executeCommand.mockReturnValue(Promise.resolve(result));
     
     const gs = new GpioStandard(GpioPins.GPIO01, PinMode.PWM, PinState.LOW);
     expect(gs.pwm).toBe(0);
@@ -100,7 +100,7 @@ test("Write changes pin state", async () => {
 
     const result: string[] = [];
     const mockedExecUtils = mocked(ExecUtils, true);
-    mockedExecUtils.mockReturnValue(Promise.resolve(result));
+    mockedExecUtils.executeCommand.mockReturnValue(Promise.resolve(result));
 
     await gs.dispose();
     expect(mockedExecUtils.executeCommand).toHaveBeenCalled();
@@ -118,7 +118,7 @@ test("Can pulse pin but throws when pin mode is input", async () => {
 
     const result: string[] = [];
     const mockedExecUtils = mocked(ExecUtils, true);
-    mockedExecUtils.mockReturnValue(Promise.resolve(result));
+    mockedExecUtils.executeCommand.mockReturnValue(Promise.resolve(result));
 
     await gs.pulse();
     expect(mockedExecUtils.executeCommand).toHaveBeenCalled();
@@ -160,7 +160,7 @@ test("Can fully dispose pwm pin", async () => {
 
     const result: string[] = [];
     const mockedExecUtils = mocked(ExecUtils, true);
-    mockedExecUtils.mockReturnValue(Promise.resolve(result));
+    mockedExecUtils.executeCommand.mockReturnValue(Promise.resolve(result));
 
     //gs.pwm = 256;
     await gs.dispose();

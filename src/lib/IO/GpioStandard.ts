@@ -1,4 +1,5 @@
 import * as FS from 'fs';
+import CoreUtils from '../../lib/PiSystem/CoreUtils';
 import ExecUtils from '../ExecUtils';
 import InvalidOperationException from '../InvalidOperationException';
 import ObjectDisposedException from '../ObjectDisposedException';
@@ -156,7 +157,7 @@ export default class GpioStandard extends GpioBase {
     }
 
     await this.write(PinState.HIGH);
-    await this.delay(millis);
+    await CoreUtils.delay(millis);
     await this.write(PinState.LOW);
   }
 

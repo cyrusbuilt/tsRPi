@@ -1,5 +1,5 @@
 import { EventEmitter } from 'events';
-import * as Util from 'util';
+import CoreUtils from '../../lib/PiSystem/CoreUtils';
 import ObjectDisposedException from '../ObjectDisposedException';
 import IPiFaceGPIO from './IPiFaceGPIO';
 import { PiFacePins } from './PiFacePins';
@@ -292,12 +292,9 @@ export default abstract class PiFaceGpioBase extends EventEmitter.EventEmitter i
     }
 
     await this.write(PinState.HIGH);
-    await this.delay(millis);
+    await CoreUtils.delay(millis);
     await this.write(PinState.LOW);
   }
-
-  // TODO probably move this to coreutils/systemutils
-  protected delay = (ms: number) => new Promise(res => setTimeout(res, ms));
 
   /**
    * Gets the GPIO pin number in string format.
