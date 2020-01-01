@@ -399,7 +399,7 @@ export default class SystemInfo {
    * ("codec_enabled") or response.
    */
   public static async isCodecH264Enabled() {
-    return SystemInfo.getCodeEnabled('H264');
+    return SystemInfo.getCodecEnabled('H264');
   }
 
   /**
@@ -409,7 +409,7 @@ export default class SystemInfo {
    * ("codec_enabled") or response.
    */
   public static async isCodecMPG2Enabled() {
-    return SystemInfo.getCodeEnabled('MPG2');
+    return SystemInfo.getCodecEnabled('MPG2');
   }
 
   /**
@@ -419,7 +419,7 @@ export default class SystemInfo {
    * ("codec_enabled") or response.
    */
   public static async isCodecWVC1Enabled() {
-    return SystemInfo.getCodeEnabled('WVC1');
+    return SystemInfo.getCodecEnabled('WVC1');
   }
 
   /**
@@ -531,7 +531,7 @@ export default class SystemInfo {
    * ("codec_enabled") or response.
    * @private
    */
-  private static async getCodeEnabled(codec: string) {
+  private static async getCodecEnabled(codec: string) {
     let enabled = false;
     const result = await ExecUtils.executeCommand(`/opt/vc/bin/vcgencmd codec_enabled ${codec}`);
     if (!!result.length) {
