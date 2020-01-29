@@ -9,15 +9,15 @@
     "coveralls": "jest --config jestconfig.json && cat ./coverage/lcov.info | coveralls",
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
-    "lint": "tslint -p tsconfig.json",
+    "lint": "tslint -p tsconfig.json --fix",
     "prepare": "npm run build",
-    "prepublishOnly": "npm test && npm run lint",
+    "prepublishOnly": "npm test && npm run format && npm run lint",
     "preversion": "npm run lint",
     "docs": "typedoc --tsconfig ./tsconfig.json --out ./doc ./src",
     "clean": "rm -rfv ./build && rm -rfv ./doc && rm -rfv ./dist && rm -rfv ./coverage",
     "bundle": "webpack --config ./webpack.config.js",
-    "build-all": "npm run clean && npm run lint && npm run format && npm run test && npm run build && npm run docs && npm run bundle",
-    "build-ci": "npm run lint && npm run coveralls && npm run build && npm run docs"
+    "build-all": "npm run clean && npm run format && npm run lint && npm run test && npm run build && npm run docs && npm run bundle",
+    "build-ci": "npm run format && npm run lint && npm run coveralls && npm run build && npm run docs"
   },
   "repository": {
     "type": "git",
@@ -51,10 +51,12 @@
   "dependencies": {
     "@babel/parser": "^7.7.4",
     "@babel/types": "^7.7.4",
+    "@types/convert-string": "^0.1.0",
     "@types/i2c-bus": "^1.0.27",
     "@types/node": "^12.12.12",
     "@types/pi-spi": "0.0.28",
     "@types/serialport": "^7.0.4",
+    "convert-string": "^0.1.0",
     "i2c-bus": "^5.1.0",
     "pi-spi": "^1.2.1",
     "serialport": "^8.0.5"
