@@ -1,8 +1,9 @@
 const path = require('path');
+const nodeExternals = require('webpack-node-externals');
 
 module.exports = {
+    target: 'node',
     entry: './src/index.ts',
-    devtool: 'inline-source-map',
     mode: 'production',
     module: {
         rules: [
@@ -17,7 +18,7 @@ module.exports = {
         extensions: ['.tsx', '.ts', '.js']
     },
     externals: [
-        'child_process'
+        nodeExternals()
     ],
     output: {
         filename: 'bundle.js',
