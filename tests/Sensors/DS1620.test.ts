@@ -1,12 +1,9 @@
 import * as FS from 'fs';
 import { mocked } from 'ts-jest/utils';
-import ExecUtils from '../../src/lib/ExecUtils';
 import GpioStandard from '../../src/lib/IO/GpioStandard';
 import { GpioPins } from '../../src/lib/IO/GpioPins';
 import { PinMode } from '../../src/lib/IO/PinMode';
 import { PinState } from '../../src/lib/IO/PinState';
-import InvalidOperationException from '../../src/lib/InvalidOperationException';
-import IOException from '../../src/lib/IO/IOException';
 import ObjectDisposedException from '../../src/lib/ObjectDisposedException';
 import DS1620 from '../../src/lib/Sensors/DS1620';
 
