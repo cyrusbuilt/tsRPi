@@ -4,3 +4,4 @@ export * from './FunctionSetFlags';
 export * from './GpioTransferProviderStandard';
 export * from './ILcdTransferProvider';
 export * from './LcdCommands';
+export * from './LcdModule';

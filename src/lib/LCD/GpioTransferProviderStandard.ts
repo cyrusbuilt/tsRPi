@@ -97,9 +97,14 @@ export default class GpioTransferProviderStandard implements ILcdTransferProvide
 
   /**
    * Initializes the transfer provider.
+   * @throws [[ObjectDisposedException]] if this instance has been disposed.
    * @override
    */
   public async begin() {
+    if (this.isDisposed) {
+      throw new ObjectDisposedException('GpioTransferProviderStandard');
+    }
+
     await this.registerSelectPort.provision();
     if (!!this.readWritePort) {
       await this.readWritePort.provision();
@@ -167,7 +172,7 @@ export default class GpioTransferProviderStandard implements ILcdTransferProvide
   private async pulseEnable() {
     await this.enablePort.write(PinState.LOW);
     await this.enablePort.write(PinState.HIGH); // Enable pulse must be > 450ns
-    await this.enablePort.write(PinState.LOW);  // Command needs 37us to settle
+    await this.enablePort.write(PinState.LOW); // Command needs 37us to settle
   }
 
   private async write4Bits(value: number) {
