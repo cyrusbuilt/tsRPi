@@ -141,11 +141,11 @@ test("Can create char", async () => {
 test("Can write buffer data", async () => {
     buildProvider();
     const lcd = new LcdModule(provider);
-    await lcd.write(new Buffer("Test"), 0, 1);
+    await lcd.write(Buffer.from("Test", 'utf-8') , 0, 1);
 
     await lcd.dispose();
     const err = new ObjectDisposedException('GpioTransferProviderStandard');
-    await expect(lcd.write(new Buffer("Test"), 0, 1)).rejects.toThrow(err);
+    await expect(lcd.write(Buffer.from("Test", 'utf-8'), 0, 1)).rejects.toThrow(err);
 });
 
 test("Can write string", async () => {
