@@ -12,3 +12,4 @@ export * from './IO';
 export * from './LED';
 export * from './PiSystem';
 export * from './Sensors';
+export * from './Components';
