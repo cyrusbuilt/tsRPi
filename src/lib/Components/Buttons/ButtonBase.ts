@@ -1,6 +1,6 @@
 import ObjectDisposedException from '../../ObjectDisposedException';
 import ComponentBase from '../ComponentBase';
-import ButtonEvent, { IButtonStateEventSubscription, ButtonStateChangeEventCallback } from './ButtonEvent';
+import ButtonEvent, { ButtonStateChangeEventCallback, IButtonStateEventSubscription } from './ButtonEvent';
 import { ButtonState } from './ButtonState';
 import IButton, { ButtonEventTypes } from './IButton';
 
@@ -52,8 +52,8 @@ export default abstract class ButtonBase extends ComponentBase implements IButto
   }
 
   /**
-   * 
-   * @param listener 
+   *
+   * @param listener
    */
   public addButtonStateEventListener(listener: ButtonStateChangeEventCallback) {
     if (this.isDisposed) {
@@ -64,7 +64,7 @@ export default abstract class ButtonBase extends ComponentBase implements IButto
     return {
       remove() {
         evt.removeListener(ButtonEventTypes.STATE_CHANGED, listener);
-      }
+      },
     } as IButtonStateEventSubscription;
   }
 
