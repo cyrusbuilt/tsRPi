@@ -52,16 +52,16 @@ export default class ButtonEvent {
 }
 
 /**
- * 
+ * Button state change event subscription;
  */
 export interface IButtonStateEventSubscription {
   /**
-   * 
+   * Removes the event listener.
    */
   remove: () => void;
 }
 
 /**
- * 
+ * Button state change event listener callback.
  */
 export type ButtonStateChangeEventCallback = (buttonEvent: ButtonEvent) => void;
