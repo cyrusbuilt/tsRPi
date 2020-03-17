@@ -185,6 +185,10 @@ export default class GpioStandard extends GpioBase {
    * @override
    */
   public async dispose() {
+    if (this.isDisposed) {
+      return;
+    }
+
     await this.unexportPin(this.innerPin);
     if (this.isPwmPin) {
       const cmd = `gpio unexport ${this.innerPin.valueOf()}`;
