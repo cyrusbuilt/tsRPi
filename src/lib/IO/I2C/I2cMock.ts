@@ -1,4 +1,5 @@
 /* tslint:disable */
+/* istanbul ignore file */
 
 export type CompletionCallback = (error: any) => any;
 

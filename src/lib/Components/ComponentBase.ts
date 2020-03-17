@@ -1,10 +1,12 @@
+import { EventEmitter } from 'events';
 import IComponent from './IComponent';
 
 /**
  * @classdesc Base class for hardware abstraction components.
+ * @extends [[EventEmitter.EventEmitter]]
  * @implements [[IComponent]]
  */
-export default class ComponentBase implements IComponent {
+export default class ComponentBase extends EventEmitter.EventEmitter implements IComponent {
   /**
    * Gets or sets the name of this component.
    * @override
@@ -27,6 +29,7 @@ export default class ComponentBase implements IComponent {
    * @constructor
    */
   constructor(props?: Map<string, any>) {
+    super();
     this.props = props;
     this.objDisposed = false;
   }

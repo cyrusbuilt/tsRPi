@@ -1,7 +1,10 @@
 import { BoardRevision } from '../BoardRevision';
 import { GpioPins } from './GpioPins';
 import IGpio from './IGpio';
-import PinStateChangeEvent from './PinStateChangeEvent';
+import PinStateChangeEvent, {
+  IPinStateChangeEventSubscription,
+  PinStateChangeEventCallback,
+} from './PinStateChangeEvent';
 
 /**
  * A RaspberryPi GPIO interface.
@@ -28,4 +31,11 @@ export default interface IRaspiGpio extends IGpio {
    * @param pse he event object.
    */
   onPinStateChange(pse: PinStateChangeEvent): void;
+
+  /**
+   * Attaches a listener (callback) for the pin state change event.
+   * @param listener The event listener to register.
+   * @throws [[ObjectDisposedException]] if this instance has been disposed.
+   */
+  addPinStateChangeListener(listener: PinStateChangeEventCallback): IPinStateChangeEventSubscription;
 }
