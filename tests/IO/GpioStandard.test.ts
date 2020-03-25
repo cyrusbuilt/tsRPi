@@ -26,7 +26,7 @@ test("Should construct with and with or without params", () => {
     expect(gs.getInitialPinValue()).toBe(PinState.LOW);
 });
 
-test("Can change pwm value", () => {
+test("Can change pwm value", async () => {
     const result: string[] = [];
     const mockedExecUtils = mocked(ExecUtils, true);
     mockedExecUtils.executeCommand.mockReturnValue(Promise.resolve(result));
@@ -34,19 +34,19 @@ test("Can change pwm value", () => {
     const gs = new GpioStandard(GpioPins.GPIO01, PinMode.PWM, PinState.LOW);
     expect(gs.pwm).toBe(0);
 
-    gs.pwm = 256;
+    await gs.setPwm(256);
     expect(mockedExecUtils.executeCommand).toHaveBeenCalled();
     expect(gs.pwm).toBe(256);
 
     const err = new InvalidOperationException('Cannot set PWM value on a pin not configured for PWM.');
     gs.mode = PinMode.OUT;
-    expect(() => { gs.pwm = 256 }).toThrow(err);
+    await expect(gs.setPwm(256)).rejects.toThrow(err);
     
     gs.mode = PinMode.PWM;
-    gs.pwm = -1;
+    await gs.setPwm(-1);
     expect(gs.pwm).toBe(0);
 
-    gs.pwm = 1048;
+    await gs.setPwm(1048);
     expect(gs.pwm).toBe(1023);
 });
 

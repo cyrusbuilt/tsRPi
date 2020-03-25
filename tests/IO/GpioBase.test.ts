@@ -122,11 +122,11 @@ test("Can change tag", () => {
     expect(fg.tag).toBe(errObj);
 });
 
-test("Can change PWM", () => {
+test("Can change PWM", async () => {
     const fg = new FakeGpio(GpioPins.GPIO01, PinMode.IN, PinState.LOW);
     expect(fg.pwm).toBe(0);
 
-    fg.pwm = 25;
+    await fg.setPwm(25);
     expect(fg.pwm).toBe(25);
 });
 
