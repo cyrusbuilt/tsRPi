@@ -10,13 +10,19 @@ export default interface IGpio extends IPin {
    * Gets or sets the PWM (Pulse-Width Modulation) value.
    * @property
    */
-  pwm: number;
+  readonly pwm: number;
 
   /**
    * Gets or sets the PWM range.
    * @property
    */
   pwmRange: number;
+
+  /**
+   * Sets the PWM value.
+   * @param value The value to set.
+   */
+  setPwm(value: number): Promise<void>;
 
   /**
    * Write a value to the pin.

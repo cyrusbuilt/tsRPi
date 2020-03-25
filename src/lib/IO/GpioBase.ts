@@ -201,10 +201,6 @@ export default class GpioBase extends EventEmitter.EventEmitter implements IRasp
     return this.pinPwm;
   }
 
-  public set pwm(value: number) {
-    this.pinPwm = value;
-  }
-
   /**
    * Gets or sets the PWM range.
    * @property
@@ -216,6 +212,15 @@ export default class GpioBase extends EventEmitter.EventEmitter implements IRasp
 
   public set pwmRange(value: number) {
     this.pinPwmRange = value;
+  }
+
+  /**
+   * Sets the PWM value.
+   * @param value The value to set.
+   * @override
+   */
+  public async setPwm(value: number) {
+    this.pinPwm = value;
   }
 
   /**

@@ -76,3 +76,5 @@ doc/
 
 # Test coverage reports
 coverage/
+
+.sfdx/

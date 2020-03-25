@@ -50,40 +50,8 @@ export default class GpioStandard extends GpioBase {
   /**
    * Gets or sets the PWM (Pulse-Width Modulation) value.
    * @property
-   * @throws [[InvalidOperationException]] if the pin is not configured
-   * as a PWM pin.
    * @override
    */
-  public set pwm(value: number) {
-    if (this.mode !== PinMode.PWM) {
-      throw new InvalidOperationException('Cannot set PWM value on a pin not configured for PWM.');
-    }
-
-    if (value < 0) {
-      value = 0;
-    }
-
-    if (value > 1023) {
-      value = 1023;
-    }
-
-    if (this.pinPwm !== value) {
-      this.pinPwm = value;
-      let cmd: string = '';
-      const cmds: Array<Promise<string[]>> = [];
-      if (!this.isPwmPin) {
-        // We may have to change mode first.
-        cmd = `gpio mode ${GpioPins[this.innerPin]} pwm`;
-        cmds.push(ExecUtils.executeCommand(cmd));
-        this.isPwmPin = true;
-      }
-
-      cmd = `gpio pwm ${GpioPins[this.innerPin]} ${this.pinPwm.toString()}`;
-      cmds.push(ExecUtils.executeCommand(cmd));
-      Promise.all(cmds);
-    }
-  }
-
   public get pwm() {
     return this.pinPwm;
   }
@@ -109,6 +77,42 @@ export default class GpioStandard extends GpioBase {
    */
   public get pwmRange() {
     return this.pinPwmRange;
+  }
+
+  /**
+   * Sets the PWM value.
+   * @param value The value to set.
+   * @override
+   * @throws [[InvalidOperationException]] this pin is not configured for PWM.
+   */
+  public async setPwm(value: number) {
+    if (this.mode !== PinMode.PWM) {
+      throw new InvalidOperationException('Cannot set PWM value on a pin not configured for PWM.');
+    }
+
+    if (value < 0) {
+      value = 0;
+    }
+
+    if (value > 1023) {
+      value = 1023;
+    }
+
+    if (this.pinPwm !== value) {
+      this.pinPwm = value;
+      let cmd: string = '';
+      const cmds: Array<Promise<string[]>> = [];
+      if (!this.isPwmPin) {
+        // We may have to change mode first.
+        cmd = `gpio mode ${GpioPins[this.innerPin]} pwm`;
+        cmds.push(ExecUtils.executeCommand(cmd));
+        this.isPwmPin = true;
+      }
+
+      cmd = `gpio pwm ${GpioPins[this.innerPin]} ${this.pinPwm.toString()}`;
+      cmds.push(ExecUtils.executeCommand(cmd));
+      await Promise.all(cmds);
+    }
   }
 
   /**

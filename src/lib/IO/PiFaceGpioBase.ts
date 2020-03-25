@@ -185,10 +185,6 @@ export default abstract class PiFaceGpioBase extends EventEmitter.EventEmitter i
     return this.pinPwm;
   }
 
-  public set pwm(value: number) {
-    this.pinPwm = value;
-  }
-
   /**
    * Gets or sets the PWM range.
    * @property
@@ -210,6 +206,15 @@ export default abstract class PiFaceGpioBase extends EventEmitter.EventEmitter i
    */
   public get address() {
     return this.innerPin.valueOf();
+  }
+
+  /**
+   * Sets the PWM value.
+   * @param value The value to set.
+   * @override
+   */
+  public async setPwm(value: number) {
+    this.pinPwm = value;
   }
 
   /**
