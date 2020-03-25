@@ -1,8 +1,8 @@
 import IGpio from '../../IO/IGpio';
+import ObjectDisposedException from '../../ObjectDisposedException';
+import Coreutils from '../../PiSystem/CoreUtils';
 import ComponentBase from '../ComponentBase';
 import IBuzzer from './IBuzzer';
-import Coreutils from '../../PiSystem/CoreUtils';
-import ObjectDisposedException from '../../ObjectDisposedException';
 
 /**
  * A buzzer device abstraction component.
@@ -28,7 +28,7 @@ export default class BuzzerComponent extends ComponentBase implements IBuzzer {
     super(props);
     this.buzzing = false;
     this.pwmPinObj = pwmPin;
-    this.componentName = "BuzzerComponent";
+    this.componentName = 'BuzzerComponent';
   }
 
   /**
@@ -84,7 +84,7 @@ export default class BuzzerComponent extends ComponentBase implements IBuzzer {
    * @override
    */
   public toString() {
-    return this.componentName || "";
+    return this.componentName || '';
   }
 
   /**
@@ -102,7 +102,7 @@ export default class BuzzerComponent extends ComponentBase implements IBuzzer {
 
   private async internalBuzz(freq: number) {
     if (this.isDisposed) {
-      throw new ObjectDisposedException("BuzzerComponent");
+      throw new ObjectDisposedException('BuzzerComponent');
     }
 
     if (freq === BuzzerComponent.STOP_FREQUENCY) {
