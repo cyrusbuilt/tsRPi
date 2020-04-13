@@ -132,7 +132,7 @@ export default class I2CBus implements II2C {
    * @override
    */
   public async writeBytes(address: number, buffer: Buffer) {
-    if (this.isDisposed || !!!this.bus) {
+    if (this.isDisposed || this.bus === null) {
       throw new ObjectDisposedException('I2CBus');
     }
 
