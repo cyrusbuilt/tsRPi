@@ -11,40 +11,72 @@ import AxisGyroscope from '../AxisGyroscope';
 import { GyroTriggerMode } from '../GyroTriggerMode';
 import IGyro from '../IGyro';
 import IMultiAxisGyroscope from '../IMultiAxisGyroscope';
+import { HMC5883LGains } from './HMC5883LGains';
+import { HMC5883LOutputRate } from './HMC5883LOutputRate';
+import { MeasurementMode } from './MeasurementMode';
+import { OperationMode } from './OperationMode';
+import { Samples } from './Samples';
 
 const CALIBRATION_READS = 50;
 const CALIBRATION_SKIPS = 5;
 
 /**
- * @classdesc Represents a device abstraction component for an Analog Devices
- * ADXL345 High Resolution 3-axis Accelerometer.
+ * @classdesc Represents a device abstraction component for a Honeywell HMC5883L
+ * 3-axis Digital Compass IC. See http://www51.honeywell.com/aero/common/documents/myaerospacecatalog-documents/Defense_Brochures-documents/HMC5883L_3-Axis_Digital_Compass_IC.pdf
+ * for details.
  * @extends [[ComponentBase]]
  * @implements [[IMultiAxisGyroscope]]
  */
-export default class ADXL345 extends ComponentBase implements IMultiAxisGyroscope {
+export default class HMC5883L extends ComponentBase implements IMultiAxisGyroscope {
   /**
-   * The default physical bus address of the ADXL345.
+   * The default physical bus address of the HMC5883L.
    */
-  public static readonly ADXL345_ADDRESS = 0x53;
+  public static readonly HMC5883L_ADDRESS: number = 0x1e;
+
+  /**
+   * Gets or sets the output rate (resolution).
+   */
+  public outputRate: HMC5883LOutputRate;
+
+  /**
+   * Gets or sets the average sample rate.
+   */
+  public samplesAverage: Samples;
+
+  /**
+   * Gets or sets the measurement mode.
+   */
+  public measurementMode: MeasurementMode;
+
+  /**
+   * Gets or sets the gain.
+   */
+  public gain: HMC5883LGains;
+
+  /**
+   * Gets or sets the mode of operation.
+   */
+  public mode: OperationMode;
 
   private device: II2C;
-  private address: number;
   private xAxis: IGyro;
   private yAxis: IGyro;
   private zAxis: IGyro;
-  private lastRead: number;
+  private address: number;
   private delta: number;
+  private lastRead: number;
   private enabled: boolean;
 
   /**
-   * Initializes a new instance of the [[ADXL345]]
+   * Initializes a new instance of the [[HMC5883L]]
    * class with the I2C device that represents the physical connection to the
-   * gyro and the bus address of the device.
+   * gyro.
    * @param device The I2C device that represents the physical
    * connection to the gyro. If null, then it is assumbed that the host is a
-   * revision 2 or higher board and a default [[I2CBus]] using the
+   * revision 2 or higher board and a default jsrpi.IO.I2C.I2CBus using the
    * rev 2 I2C bus path will be used instead.
    * @param busAddress The bus address of the device.
+   * @constructor
    */
   constructor(device?: II2C, busAddress: number = 0) {
     super();
@@ -54,27 +86,22 @@ export default class ADXL345 extends ComponentBase implements IMultiAxisGyroscop
     }
 
     this.device = device;
-    this.address = ADXL345.ADXL345_ADDRESS;
+    this.xAxis = new AxisGyroscope(this, 20);
+    this.yAxis = new AxisGyroscope(this, 20);
+    this.zAxis = new AxisGyroscope(this, 20);
+    this.address = HMC5883L.HMC5883L_ADDRESS;
     if (busAddress > 0) {
       this.address = busAddress;
     }
 
-    this.xAxis = new AxisGyroscope(this, 20);
-    this.yAxis = new AxisGyroscope(this, 20);
-    this.zAxis = new AxisGyroscope(this, 20);
-
-    this.lastRead = 0;
     this.delta = 0;
+    this.lastRead = 0;
     this.enabled = false;
-  }
-
-  /**
-   * Gets the time difference (delta) since the last loop.
-   * @readonly
-   * @override
-   */
-  public get timeDelta() {
-    return this.delta;
+    this.outputRate = HMC5883LOutputRate.RATE_15_HZ;
+    this.samplesAverage = Samples.AVERAGE_8;
+    this.measurementMode = MeasurementMode.NORMAL_MODE;
+    this.gain = HMC5883LGains.GAIN_1_3_GA;
+    this.mode = OperationMode.CONTINUOUS;
   }
 
   /**
@@ -102,7 +129,16 @@ export default class ADXL345 extends ComponentBase implements IMultiAxisGyroscop
   }
 
   /**
-   * Gets whether or not the device is enabled.
+   * Gets the time difference (delta) since the last loop.
+   * @readonly
+   * @override
+   */
+  public get timeDelta() {
+    return this.delta;
+  }
+
+  /**
+   * Gets a flag indicating whether or not the device is enabled.
    * @readonly
    */
   public get isEnabled() {
@@ -110,7 +146,7 @@ export default class ADXL345 extends ComponentBase implements IMultiAxisGyroscop
   }
 
   /**
-   * Releases all resources used by the ADXL345 object.
+   * Releases all resources used by the HMC5883L5 object.
    * @override
    */
   public async dispose() {
@@ -119,45 +155,68 @@ export default class ADXL345 extends ComponentBase implements IMultiAxisGyroscop
     }
 
     await this.device.dispose();
-    // await this.xAxis.dispose();
-    // await this.yAxis.dispose();
-    // await this.zAxis.dispose();
+
+    // NOTE we can't dispose the X, Y, or Z axis objects because they
+    // contain a circular reference back to this object that would
+    // cause a crash. Those objects will each try to dispose the
+    // reference to this object when we dispose them. So we just
+    // have to let the GC clean them up by itself.
+
+    this.address = 0;
     this.delta = 0;
     this.lastRead = 0;
-    this.enabled = false;
+    this.outputRate = HMC5883LOutputRate.RATE_15_HZ;
+    this.samplesAverage = Samples.AVERAGE_8;
+    this.measurementMode = MeasurementMode.NORMAL_MODE;
+    this.gain = HMC5883LGains.GAIN_1_3_GA;
+    this.mode = OperationMode.CONTINUOUS;
     super.dispose();
   }
 
   /**
-   * Enables the gyro.
+   * Enables the gyro (if not already enabled).
    * @throws [[ObjectDisposedException]] if this instance has been disposed.
-   * @throws [[IOException]] if unable to write to the device.
+   * @throws [[InvalidOperationException]] if there is no open connection
+   * to the device.
    * @override
    */
   public async enable() {
-    if (this.isDisposed) {
-      throw new ObjectDisposedException('ADXL345');
-    }
-
-    if (this.enabled) {
+    if (this.isEnabled) {
       return;
     }
 
-    const packet = Buffer.from([0x31, 0x0b]);
+    if (this.isDisposed) {
+      throw new ObjectDisposedException('HMC5883L');
+    }
+
+    const packet = Buffer.from([2, 0]);
     await this.device.writeBytes(this.address, packet);
     this.enabled = true;
   }
 
   /**
-   * Disables the gyro.
+   * Disables the gyro (if not already disabled).
    * @throws [[ObjectDisposedException]] if this instance has been disposed.
+   * @throws [[InvalidOperationException]] if there is no open connection
+   * to the device.
    * @override
    */
   public async disable() {
-    if (this.isDisposed) {
-      throw new ObjectDisposedException('ADXL345');
+    if (!this.isEnabled) {
+      return;
     }
 
+    if (this.isDisposed) {
+      throw new ObjectDisposedException('HMC5883L');
+    }
+
+    const initPkt = Buffer.from([
+      (this.samplesAverage << 5) + (this.outputRate << 2) + this.measurementMode,
+      this.gain << 5,
+      OperationMode.IDLE,
+    ]);
+
+    await this.device.writeBytes(this.address, initPkt);
     this.enabled = false;
   }
 
@@ -173,7 +232,7 @@ export default class ADXL345 extends ComponentBase implements IMultiAxisGyroscop
    */
   public async init(triggeringAxis: IGyro, trigMode: GyroTriggerMode = GyroTriggerMode.READ_NOT_TRIGGERED) {
     if (this.isDisposed) {
-      throw new ObjectDisposedException('ADXL345');
+      throw new ObjectDisposedException('HMC5883L');
     }
 
     if (!this.device.isOpen) {
@@ -181,24 +240,9 @@ export default class ADXL345 extends ComponentBase implements IMultiAxisGyroscop
     }
 
     await this.enable();
-    if (triggeringAxis === this.xAxis) {
-      this.xAxis.setReadTrigger(trigMode);
-    } else {
-      this.xAxis.setReadTrigger(GyroTriggerMode.READ_NOT_TRIGGERED);
-    }
-
-    if (triggeringAxis === this.yAxis) {
-      this.yAxis.setReadTrigger(trigMode);
-    } else {
-      this.yAxis.setReadTrigger(GyroTriggerMode.READ_NOT_TRIGGERED);
-    }
-
-    if (triggeringAxis === this.zAxis) {
-      this.zAxis.setReadTrigger(trigMode);
-    } else {
-      this.zAxis.setReadTrigger(GyroTriggerMode.READ_NOT_TRIGGERED);
-    }
-
+    this.x.setReadTrigger(triggeringAxis === this.x ? trigMode : GyroTriggerMode.READ_NOT_TRIGGERED);
+    this.y.setReadTrigger(triggeringAxis === this.y ? trigMode : GyroTriggerMode.READ_NOT_TRIGGERED);
+    this.z.setReadTrigger(triggeringAxis === this.z ? trigMode : GyroTriggerMode.READ_NOT_TRIGGERED);
     return triggeringAxis;
   }
 
@@ -211,27 +255,25 @@ export default class ADXL345 extends ComponentBase implements IMultiAxisGyroscop
    */
   public async readGyro() {
     if (this.isDisposed) {
-      throw new ObjectDisposedException('ADXL345');
+      throw new ObjectDisposedException('HMC5883L');
     }
 
-    if (!this.enabled) {
-      throw new InvalidOperationException('Cannot read from a disabled device.');
+    if (!this.isEnabled) {
+      throw new InvalidOperationException('Cannot read gyro. Device is disabled.');
     }
 
     const now = SystemInfo.getCurrentTimeMillis();
     this.delta = now - this.lastRead;
     this.lastRead = now;
 
-    await this.device.writeByte(this.address, 0x08);
-    await Coreutils.delay(10);
     const data = await this.device.readBytes(this.address, 6);
     if (data.length !== 6) {
-      throw new IOException(`Couldn't read compass data; Returned buffer size: ${data.length}`);
+      throw new IOException(`Couldn't read compass data; Returned buffer size ${data.length}`);
     }
 
-    this.xAxis.setRawValue(((data[0] & 0xff) << 8) + (data[1] & 0xff));
-    this.yAxis.setRawValue(((data[2] & 0xff) << 8) + (data[3] & 0xff));
-    this.zAxis.setRawValue(((data[3] & 0xff) << 8) + (data[5] & 0xff));
+    await this.x.setRawValue(((data[0] & 0xff) << 8) + (data[1] & 0xff));
+    await this.y.setRawValue(((data[2] & 0xff) << 8) + (data[3] & 0xff));
+    await this.z.setRawValue(((data[3] & 0xff) << 8) + (data[5] & 0xff));
   }
 
   /**
@@ -245,6 +287,10 @@ export default class ADXL345 extends ComponentBase implements IMultiAxisGyroscop
     let totalY = 0;
     let totalZ = 0;
 
+    let x = 0;
+    let y = 0;
+    let z = 0;
+
     let minX = 10000;
     let minY = 10000;
     let minZ = 10000;
@@ -252,10 +298,6 @@ export default class ADXL345 extends ComponentBase implements IMultiAxisGyroscop
     let maxX = -10000;
     let maxY = -10000;
     let maxZ = -10000;
-
-    let x = 0;
-    let y = 0;
-    let z = 0;
 
     for (let i = 0; i < CALIBRATION_SKIPS; i++) {
       await this.readGyro();
@@ -265,9 +307,9 @@ export default class ADXL345 extends ComponentBase implements IMultiAxisGyroscop
     for (let j = 0; j < CALIBRATION_READS; j++) {
       await this.readGyro();
 
-      x = await this.xAxis.getRawValue();
-      y = await this.yAxis.getRawValue();
-      z = await this.zAxis.getRawValue();
+      x = await this.x.getRawValue();
+      y = await this.y.getRawValue();
+      z = await this.z.getRawValue();
 
       totalX += x;
       totalY += y;
@@ -298,8 +340,8 @@ export default class ADXL345 extends ComponentBase implements IMultiAxisGyroscop
       }
     }
 
-    this.xAxis.offset = totalX / CALIBRATION_READS;
-    this.yAxis.offset = totalY / CALIBRATION_READS;
-    this.zAxis.offset = totalZ / CALIBRATION_READS;
+    this.x.offset = totalX / CALIBRATION_READS;
+    this.y.offset = totalY / CALIBRATION_READS;
+    this.z.offset = totalZ / CALIBRATION_READS;
   }
 }
