@@ -1,0 +1,1984 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>BitSet | tsrpi - v1.0.0</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">tsrpi - v1.0.0</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/_lib_bitset_.html">&quot;lib/BitSet&quot;</a>
+				</li>
+				<li>
+					<a href="_lib_bitset_.bitset.html">BitSet</a>
+				</li>
+			</ul>
+			<h1>Class BitSet</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<dl class="tsd-comment-tags">
+						<dt>classdesc</dt>
+						<dd><p>An implementation of a vector of bits that grows as needed. Each component of
+								the bit set has a Boolean value. The bits of a BitSet are indexed by
+								non-negative integers. Individual indexed bits can be examined, set, or
+								cleared. One BitSet may be used to modify the contents of another through
+								logical AND, logical inclusive OR, and logical exclusive OR operations. By
+								default, all bits in the set initially have the value of false. Every BitSet
+								has a current size, which is the number of bits of space currently in use by
+								the BitSet. Note that the size is related to the implementation of a BitSet,
+								so it may change with implementation. The length of a BitSet relates to the
+								logical length of a BitSet and is defined independently of implementation.
+								Unless otherwise noted, passing a null parameter to any of the methods in a
+							BitSet will result in a ArgumentNullException.</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">BitSet</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_lib_bitset_.bitset.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_lib_bitset_.bitset.html#bits" class="tsd-kind-icon">bits</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_lib_bitset_.bitset.html#name" class="tsd-kind-icon">name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_lib_bitset_.bitset.html#sizeissticky" class="tsd-kind-icon">size<wbr>IsSticky</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_lib_bitset_.bitset.html#wordsinuse" class="tsd-kind-icon">words<wbr>InUse</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="_lib_bitset_.bitset.html#bit_index_mask" class="tsd-kind-icon">BIT_<wbr>INDEX_<wbr>MASK</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="_lib_bitset_.bitset.html#long_mask" class="tsd-kind-icon">LONG_<wbr>MASK</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Accessors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_lib_bitset_.bitset.html#cardinality" class="tsd-kind-icon">cardinality</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_lib_bitset_.bitset.html#isempty" class="tsd-kind-icon">is<wbr>Empty</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_lib_bitset_.bitset.html#length" class="tsd-kind-icon">length</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_lib_bitset_.bitset.html#size" class="tsd-kind-icon">size</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_bitset_.bitset.html#and" class="tsd-kind-icon">and</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_bitset_.bitset.html#andnot" class="tsd-kind-icon">and<wbr>Not</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_bitset_.bitset.html#checkinvariants" class="tsd-kind-icon">check<wbr>Invariants</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_bitset_.bitset.html#clear" class="tsd-kind-icon">clear</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_bitset_.bitset.html#clearfromto" class="tsd-kind-icon">clear<wbr>From<wbr>To</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_bitset_.bitset.html#clone" class="tsd-kind-icon">clone</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_bitset_.bitset.html#containsall" class="tsd-kind-icon">contains<wbr>All</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_lib_bitset_.bitset.html#ensurecapacity" class="tsd-kind-icon">ensure<wbr>Capacity</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_bitset_.bitset.html#equals" class="tsd-kind-icon">equals</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_lib_bitset_.bitset.html#expandto" class="tsd-kind-icon">expand<wbr>To</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_bitset_.bitset.html#flip" class="tsd-kind-icon">flip</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_bitset_.bitset.html#flipfromto" class="tsd-kind-icon">flip<wbr>From<wbr>To</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_bitset_.bitset.html#get" class="tsd-kind-icon">get</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_bitset_.bitset.html#getbits" class="tsd-kind-icon">get<wbr>Bits</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_bitset_.bitset.html#getfromto" class="tsd-kind-icon">get<wbr>From<wbr>To</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_bitset_.bitset.html#gethashcode" class="tsd-kind-icon">get<wbr>Hash<wbr>Code</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_bitset_.bitset.html#getwordsinuse" class="tsd-kind-icon">get<wbr>Words<wbr>InUse</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_bitset_.bitset.html#intersects" class="tsd-kind-icon">intersects</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_bitset_.bitset.html#nextclearbit" class="tsd-kind-icon">next<wbr>Clear<wbr>Bit</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_bitset_.bitset.html#nextsetbit" class="tsd-kind-icon">next<wbr>Set<wbr>Bit</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_bitset_.bitset.html#or" class="tsd-kind-icon">or</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_bitset_.bitset.html#previousclearbit" class="tsd-kind-icon">previous<wbr>Clear<wbr>Bit</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_bitset_.bitset.html#previoussetbit" class="tsd-kind-icon">previous<wbr>Set<wbr>Bit</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_bitset_.bitset.html#recalculatewordsinuse" class="tsd-kind-icon">recalculate<wbr>Words<wbr>InUse</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_bitset_.bitset.html#set" class="tsd-kind-icon">set</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_bitset_.bitset.html#setbitvalue" class="tsd-kind-icon">set<wbr>Bit<wbr>Value</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_bitset_.bitset.html#setfromto" class="tsd-kind-icon">set<wbr>From<wbr>To</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_bitset_.bitset.html#setvalue" class="tsd-kind-icon">set<wbr>Value</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_bitset_.bitset.html#setvaluefromto" class="tsd-kind-icon">set<wbr>Value<wbr>From<wbr>To</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_bitset_.bitset.html#tobitarray" class="tsd-kind-icon">to<wbr>Bit<wbr>Array</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_bitset_.bitset.html#tostring" class="tsd-kind-icon">to<wbr>String</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_lib_bitset_.bitset.html#trimtosize" class="tsd-kind-icon">trim<wbr>ToSize</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_bitset_.bitset.html#xor" class="tsd-kind-icon">x<wbr>Or</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_lib_bitset_.bitset.html#checkrange" class="tsd-kind-icon">check<wbr>Range</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_lib_bitset_.bitset.html#fromwordarray" class="tsd-kind-icon">from<wbr>Word<wbr>Array</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_lib_bitset_.bitset.html#numberoftrailingzeros" class="tsd-kind-icon">number<wbr>OfTrailing<wbr>Zeros</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_lib_bitset_.bitset.html#valueof" class="tsd-kind-icon">value<wbr>Of</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_lib_bitset_.bitset.html#wordindex" class="tsd-kind-icon">word<wbr>Index</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Bit<wbr>Set<span class="tsd-signature-symbol">(</span>bits<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_lib_bitset_.bitset.html" class="tsd-signature-type">BitSet</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/BitSet.ts#L127">src/lib/BitSet.ts:127</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Initializes a new instance of <a href="_lib_bitset_.bitset.html">BitSet</a>.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p>[[RangeError]] if &#39;bits&#39; param must not be negative.</p>
+									</dd>
+									<dt>throws</dt>
+									<dd><p><a href="_lib_illegalargumentexception_.illegalargumentexception.html">IllegalArgumentException</a> param &#39;bits&#39; must be a number
+										or an array of bits.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>bits: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Either a number of bits to populate or an array of bits to use.
+											If null or undefined, then a default bit array will be used.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_lib_bitset_.bitset.html" class="tsd-signature-type">BitSet</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="bits" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> bits</h3>
+					<div class="tsd-signature tsd-kind-icon">bits<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/BitSet.ts#L125">src/lib/BitSet.ts:125</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="name" class="tsd-anchor"></a>
+					<h3>name</h3>
+					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/BitSet.ts#L123">src/lib/BitSet.ts:123</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The class name.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="sizeissticky" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> size<wbr>IsSticky</h3>
+					<div class="tsd-signature tsd-kind-icon">size<wbr>IsSticky<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/BitSet.ts#L127">src/lib/BitSet.ts:127</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="wordsinuse" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> words<wbr>InUse</h3>
+					<div class="tsd-signature tsd-kind-icon">words<wbr>InUse<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/BitSet.ts#L126">src/lib/BitSet.ts:126</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="bit_index_mask" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> BIT_<wbr>INDEX_<wbr>MASK</h3>
+					<div class="tsd-signature tsd-kind-icon">BIT_<wbr>INDEX_<wbr>MASK<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;BITS_PER_WORD - 1</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/BitSet.ts#L37">src/lib/BitSet.ts:37</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The bit index mask.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>constant</dt>
+							<dd></dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="long_mask" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> LONG_<wbr>MASK</h3>
+					<div class="tsd-signature tsd-kind-icon">LONG_<wbr>MASK<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">63</span><span class="tsd-signature-symbol"> =&nbsp;63</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/BitSet.ts#L43">src/lib/BitSet.ts:43</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The long mask.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>constant</dt>
+							<dd></dd>
+						</dl>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Accessors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="cardinality" class="tsd-anchor"></a>
+					<h3>cardinality</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> cardinality<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/BitSet.ts#L215">src/lib/BitSet.ts:215</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>property</dt>
+									<dd><p>The number of bits set true.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="isempty" class="tsd-anchor"></a>
+					<h3>is<wbr>Empty</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> isEmpty<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/BitSet.ts#L166">src/lib/BitSet.ts:166</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>property</dt>
+									<dd><p>true if empty; Otherwise, false.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="length" class="tsd-anchor"></a>
+					<h3>length</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> length<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/BitSet.ts#L174">src/lib/BitSet.ts:174</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>property</dt>
+									<dd><p>Returns the logical size of this BitSet or zero
+										if this instance contains no bits.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="size" class="tsd-anchor"></a>
+					<h3>size</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> size<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/BitSet.ts#L192">src/lib/BitSet.ts:192</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>property</dt>
+									<dd><p>Returns The maximum element in the set is the
+										size minus the first element.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="and" class="tsd-anchor"></a>
+					<h3>and</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">and<span class="tsd-signature-symbol">(</span>bs<span class="tsd-signature-symbol">: </span><a href="_lib_bitset_.bitset.html" class="tsd-signature-type">BitSet</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/BitSet.ts#L251">src/lib/BitSet.ts:251</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Performs a logical AND of this target BitSet with the argument BitSet. This
+										BitSet is modified so that each bit in it has the value ture if (and only
+										if) it both initially had the value true and the corresponding bit in the
+									specified BitSet also had the value true.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>bs: <a href="_lib_bitset_.bitset.html" class="tsd-signature-type">BitSet</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A BitSet.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="andnot" class="tsd-anchor"></a>
+					<h3>and<wbr>Not</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">and<wbr>Not<span class="tsd-signature-symbol">(</span>bs<span class="tsd-signature-symbol">: </span><a href="_lib_bitset_.bitset.html" class="tsd-signature-type">BitSet</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/BitSet.ts#L273">src/lib/BitSet.ts:273</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Clears all of the bits in this BitSet whose corresponding bit is set in the
+									specified BitSet.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>bs: <a href="_lib_bitset_.bitset.html" class="tsd-signature-type">BitSet</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The BitSet with which to mask this instance.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="checkinvariants" class="tsd-anchor"></a>
+					<h3>check<wbr>Invariants</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">check<wbr>Invariants<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/BitSet.ts#L429">src/lib/BitSet.ts:429</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Every public method must preserve invariants. This method checks to see if
+										this is true using assertions. Assertion errors are thrown if any of the
+									assertions fail.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="clear" class="tsd-anchor"></a>
+					<h3>clear</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">clear<span class="tsd-signature-symbol">(</span>pos<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/BitSet.ts#L352">src/lib/BitSet.ts:352</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets the bit at the specified position (index) to false, or clears the
+									entire BitSet if no value given.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p>[[RangeError]] if pos is greater than the last index.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>pos: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The index of the bit to be cleared. If null or less
+										than one, clears the entire BitSet.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="clearfromto" class="tsd-anchor"></a>
+					<h3>clear<wbr>From<wbr>To</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">clear<wbr>From<wbr>To<span class="tsd-signature-symbol">(</span>fromIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, toIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/BitSet.ts#L384">src/lib/BitSet.ts:384</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets the bits from the specified &#39;from&#39; index (inclusive) to the specified
+									&#39;to&#39; index (exclusive) to false.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p>[[RangeError]] if either parameter is less than zero.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fromIndex: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The starting index. Throws [[RangeError]]
+										if less than zero or greater than toIndex.</p>
+									</div>
+								</li>
+								<li>
+									<h5>toIndex: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The ending index. Throws [[RangeError]] if
+										less than zero.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="clone" class="tsd-anchor"></a>
+					<h3>clone</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">clone<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="_lib_bitset_.bitset.html" class="tsd-signature-type">BitSet</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/BitSet.ts#L439">src/lib/BitSet.ts:439</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Creates a new object that is a copy of the current instance.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span>
+								<span class="tsd-signature-symbol"> | </span>
+								<a href="_lib_bitset_.bitset.html" class="tsd-signature-type">BitSet</a>
+							</h4>
+							<p>A new BitSet that is a copy of this instance.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="containsall" class="tsd-anchor"></a>
+					<h3>contains<wbr>All</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">contains<wbr>All<span class="tsd-signature-symbol">(</span>bs<span class="tsd-signature-symbol">: </span><a href="_lib_bitset_.bitset.html" class="tsd-signature-type">BitSet</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/BitSet.ts#L944">src/lib/BitSet.ts:944</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>This method is used for efficiency. It checks to see if this instance
+									contains all the same bits as the specified BitSet.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>bs: <a href="_lib_bitset_.bitset.html" class="tsd-signature-type">BitSet</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The BitSet to check.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>true if the specified BitSet contains all the same
+							bits; Otherwise, false.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="ensurecapacity" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> ensure<wbr>Capacity</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">ensure<wbr>Capacity<span class="tsd-signature-symbol">(</span>lastElt<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/BitSet.ts#L1014">src/lib/BitSet.ts:1014</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Ensures that this BitSet can hold enough words.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>lastElt: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The minimum acceptable number of words.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="equals" class="tsd-anchor"></a>
+					<h3>equals</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">equals<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/BitSet.ts#L458">src/lib/BitSet.ts:458</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Determines whether the specified object is equal to the current BitSet.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>obj: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The object to compare with the current BitSet.
+											Generally, this method should be used to check against other BitSet
+										instances.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>true if equal; Otherwise, false.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="expandto" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> expand<wbr>To</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">expand<wbr>To<span class="tsd-signature-symbol">(</span>wordIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/BitSet.ts#L1028">src/lib/BitSet.ts:1028</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Ensures that the BitSet can accomodate a given word index, temporarily
+										violating the invariants. The caller must restore the invariants before
+									returning to the user, possibly using [[recalcualteWordsInUse()]].</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>wordIndex: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The index to be accomodated.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="flip" class="tsd-anchor"></a>
+					<h3>flip</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">flip<span class="tsd-signature-symbol">(</span>index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/BitSet.ts#L490">src/lib/BitSet.ts:490</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets the bit at the specified index to the compliment of its current value.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p>[[RangeError]] if index is less than zero.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>index: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The index of the bit to flip.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="flipfromto" class="tsd-anchor"></a>
+					<h3>flip<wbr>From<wbr>To</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">flip<wbr>From<wbr>To<span class="tsd-signature-symbol">(</span>fromIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, toIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/BitSet.ts#L510">src/lib/BitSet.ts:510</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets each bit from the specified &quot;from&quot; (inclusive) index to the specified
+									&quot;to&quot; (exclusive) index to the compliment of its current value.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p>[[RangeError]] if either parameter is less than zero.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fromIndex: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The starting index. This is the first bit to flip.</p>
+									</div>
+								</li>
+								<li>
+									<h5>toIndex: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The ending index. This is the index after the
+										last bit to flip.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="get" class="tsd-anchor"></a>
+					<h3>get</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<span class="tsd-signature-symbol">(</span>index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/BitSet.ts#L583">src/lib/BitSet.ts:583</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the value of the bit at the specified index.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p>[[RangeError]] if index is less than zero.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>index: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The index at which to get the bit value.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>true if the requested bit is set; Otherwise, false.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getbits" class="tsd-anchor"></a>
+					<h3>get<wbr>Bits</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Bits<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/BitSet.ts#L208">src/lib/BitSet.ts:208</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the internal bit array.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h4>
+							<p>The internal bit array.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getfromto" class="tsd-anchor"></a>
+					<h3>get<wbr>From<wbr>To</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>From<wbr>To<span class="tsd-signature-symbol">(</span>fromIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, toIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_lib_bitset_.bitset.html" class="tsd-signature-type">BitSet</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/BitSet.ts#L618">src/lib/BitSet.ts:618</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns a new BitSet composed of bits from this BitSet from the specified
+										the specified &quot;from&quot; (inclusive) index to the specified &quot;to&quot; (exclusive)
+									index.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p>[[RangeError]] if either parameter is less than zero.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fromIndex: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The starting index. This is the first bit to include.</p>
+									</div>
+								</li>
+								<li>
+									<h5>toIndex: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The ending index. This is the index after the
+										last bit to include.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_lib_bitset_.bitset.html" class="tsd-signature-type">BitSet</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="gethashcode" class="tsd-anchor"></a>
+					<h3>get<wbr>Hash<wbr>Code</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Hash<wbr>Code<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/BitSet.ts#L745">src/lib/BitSet.ts:745</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets a hash code value for this BitSet. The hash code depends only on which
+									bits are set within this instance.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>The hash code value for this BitSet.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getwordsinuse" class="tsd-anchor"></a>
+					<h3>get<wbr>Words<wbr>InUse</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Words<wbr>InUse<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/BitSet.ts#L200">src/lib/BitSet.ts:200</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the number of words in use.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>The number of words in use.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="intersects" class="tsd-anchor"></a>
+					<h3>intersects</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">intersects<span class="tsd-signature-symbol">(</span>bs<span class="tsd-signature-symbol">: </span><a href="_lib_bitset_.bitset.html" class="tsd-signature-type">BitSet</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/BitSet.ts#L760">src/lib/BitSet.ts:760</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Determines whether or not the specified BitSet has any bits set to true
+									that are also set to true in this BitSet.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>bs: <a href="_lib_bitset_.bitset.html" class="tsd-signature-type">BitSet</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The BitSet to intersect with.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>true if this instance intersects with the specified BitSet.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="nextclearbit" class="tsd-anchor"></a>
+					<h3>next<wbr>Clear<wbr>Bit</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">next<wbr>Clear<wbr>Bit<span class="tsd-signature-symbol">(</span>fromIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/BitSet.ts#L785">src/lib/BitSet.ts:785</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the index of the first bit that is set to false that occurs on or
+									after the specified starting index.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p>[[RangeError]] if fromIndex is less than zero.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fromIndex: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The index to start checking from (inclusive).</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>The index of the next clear bit; Otherwise, -1
+							if no such bit is found.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="nextsetbit" class="tsd-anchor"></a>
+					<h3>next<wbr>Set<wbr>Bit</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">next<wbr>Set<wbr>Bit<span class="tsd-signature-symbol">(</span>fromIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/BitSet.ts#L824">src/lib/BitSet.ts:824</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the index of the first bit that is set to true that occurs on or
+									after the specified starting index.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p>[[RangeError]] if fromIndex is less than zero.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fromIndex: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The index to start checking from (inclusive).
+										Throws RangeError if less than zero.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>The index of the next set bit after the
+							specified index. If no such bit exists, then returns -1.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="or" class="tsd-anchor"></a>
+					<h3>or</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">or<span class="tsd-signature-symbol">(</span>bs<span class="tsd-signature-symbol">: </span><a href="_lib_bitset_.bitset.html" class="tsd-signature-type">BitSet</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/BitSet.ts#L290">src/lib/BitSet.ts:290</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Performs a logical OR of this BitSet with the specified BitSet. This BitSet
+										is modified so that a bit in it has the value true if (and only if) it
+										either already had the value ture or the corresponding bit in the specified
+									BitSet has the value true.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>bs: <a href="_lib_bitset_.bitset.html" class="tsd-signature-type">BitSet</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A BitSet.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="previousclearbit" class="tsd-anchor"></a>
+					<h3>previous<wbr>Clear<wbr>Bit</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">previous<wbr>Clear<wbr>Bit<span class="tsd-signature-symbol">(</span>fromIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/BitSet.ts#L904">src/lib/BitSet.ts:904</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the index of the nearest bit that is set to false that occurs on or
+									before the specified starting index.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p>[[RangeError]] if fromIndex is less than zero.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fromIndex: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The index to start checking from (inclusive).
+										Throws RangeError if fromIndex is less than -1.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>The index of the previous clear bit, or -1 if
+							there is no such bit or fromIndex is -1.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="previoussetbit" class="tsd-anchor"></a>
+					<h3>previous<wbr>Set<wbr>Bit</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">previous<wbr>Set<wbr>Bit<span class="tsd-signature-symbol">(</span>fromIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/BitSet.ts#L862">src/lib/BitSet.ts:862</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the index of the nearest bit that is set to true that occurs on or
+									before the specified starting index.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p>[[RangeError]] if fromIndex is less than zero.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fromIndex: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The index to start checking from (inclusive).
+										Throws RangeError if less than zero.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>The index of the previous set bit, or -1 if
+							there is no such bit or if fromIndex is set to -1.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="recalculatewordsinuse" class="tsd-anchor"></a>
+					<h3>recalculate<wbr>Words<wbr>InUse</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">recalculate<wbr>Words<wbr>InUse<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/BitSet.ts#L598">src/lib/BitSet.ts:598</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets the internal word count field to the logical size in words of the
+										BitSet. WARNING: This method assumes that the number of words actually in
+									use is less than or equal to the current value of the words in use field!!!</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="set" class="tsd-anchor"></a>
+					<h3>set</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<span class="tsd-signature-symbol">(</span>index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/BitSet.ts#L664">src/lib/BitSet.ts:664</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets the bit at the specified index to true.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p>[[RangeError]] if index is less than zero.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>index: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The index at which to set the bit.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setbitvalue" class="tsd-anchor"></a>
+					<h3>set<wbr>Bit<wbr>Value</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Bit<wbr>Value<span class="tsd-signature-symbol">(</span>index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, bit<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/BitSet.ts#L549">src/lib/BitSet.ts:549</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets the raw bit value at the specified index. Avoid using this method
+										whenever possible. Instead use either set() or setFromTo() so as to
+									preserve invariants.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p><a href="_lib_illegalargumentexception_.illegalargumentexception.html">IllegalArgumentException</a> if index is not a number - or - bit is
+										is not a number (0 or 1) or boolean.</p>
+									</dd>
+									<dt>throws</dt>
+									<dd><p>[[RangeError]] if index is less than zero or greater than the last
+										index.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>index: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The index at which to set the specified bit.</p>
+									</div>
+								</li>
+								<li>
+									<h5>bit: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Set true or 1 to set the bit, or false or 0
+										to clear the bit.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setfromto" class="tsd-anchor"></a>
+					<h3>set<wbr>From<wbr>To</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>From<wbr>To<span class="tsd-signature-symbol">(</span>fromIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, toIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/BitSet.ts#L697">src/lib/BitSet.ts:697</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets the bits from the specified &quot;from&quot; index (inclusive) to the specified
+									&quot;to&quot; index (exclusive) to true.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p>[[RangeError]] if index is less than zero.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fromIndex: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The starting index. This is the first bit to set.</p>
+									</div>
+								</li>
+								<li>
+									<h5>toIndex: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The ending index. This is the index after the
+										last bit to set.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setvalue" class="tsd-anchor"></a>
+					<h3>set<wbr>Value</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Value<span class="tsd-signature-symbol">(</span>index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/BitSet.ts#L681">src/lib/BitSet.ts:681</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets the bit at the specified index to the specified value.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p>[[RangeError]] if index is less than zero.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>index: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The index at which to set the bit.</p>
+									</div>
+								</li>
+								<li>
+									<h5>value: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The value to set.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setvaluefromto" class="tsd-anchor"></a>
+					<h3>set<wbr>Value<wbr>From<wbr>To</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Value<wbr>From<wbr>To<span class="tsd-signature-symbol">(</span>fromIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, toIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/BitSet.ts#L732">src/lib/BitSet.ts:732</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets the bits from the specified &quot;from&quot; index (inclusive) to the specified
+									&quot;to&quot; index (exclusive) to the specified value.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p>[[RangeError]] if index is less than zero.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fromIndex: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The starting index. This is the first bit to set.</p>
+									</div>
+								</li>
+								<li>
+									<h5>toIndex: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The ending index. This is the index after the
+										last bit to set.</p>
+									</div>
+								</li>
+								<li>
+									<h5>value: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The value to set.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="tobitarray" class="tsd-anchor"></a>
+					<h3>to<wbr>Bit<wbr>Array</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">to<wbr>Bit<wbr>Array<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/BitSet.ts#L1005">src/lib/BitSet.ts:1005</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns a new array of bits containing all the bits in this BitSet.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h4>
+							<p>An array of bits containing little-endian representation of
+							all the bits in this BitSet.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="tostring" class="tsd-anchor"></a>
+					<h3>to<wbr>String</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">to<wbr>String<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/BitSet.ts#L969">src/lib/BitSet.ts:969</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns a String that represents the current BitSet. For every index for
+										which this BitSet contains a bit in the set state, the decimal
+										representation of that index is included in the result. Such indices are
+										listed in order from lowest to highest, separated by a &quot;, &quot; (a comma and a
+										space) and surrounded by braces, resulting in the usual mathematical
+									notation for a set of integers.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<p>A String that represents the current BitSet.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="trimtosize" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> trim<wbr>ToSize</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">trim<wbr>ToSize<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/BitSet.ts#L1042">src/lib/BitSet.ts:1042</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Attempts to reduce internal storage used for the bits in this BitSet.
+										Calling this method may, but is not required to, affect the value returned
+									by a subsequent call to the size() property.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="xor" class="tsd-anchor"></a>
+					<h3>x<wbr>Or</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">x<wbr>Or<span class="tsd-signature-symbol">(</span>bs<span class="tsd-signature-symbol">: </span><a href="_lib_bitset_.bitset.html" class="tsd-signature-type">BitSet</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/BitSet.ts#L323">src/lib/BitSet.ts:323</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Performs a logical XOR of this BitSet with the specified BitSet. This
+										BitSet is modified so that bit in it has the value true if (and only if)
+									one of the following statements holds true:</p>
+									<ul>
+										<li>The bit initially has the value true, and the corresponding bit in the
+										specified BitSet has the value false.</li>
+										<li>The bit initially has the value false, and the corresponding bit in the
+										specified BitSet has the value true.</li>
+									</ul>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>bs: <a href="_lib_bitset_.bitset.html" class="tsd-signature-type">BitSet</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A BitSet.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="checkrange" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> check<wbr>Range</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">check<wbr>Range<span class="tsd-signature-symbol">(</span>fromIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, toIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/BitSet.ts#L62">src/lib/BitSet.ts:62</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Checks to see if the specified &quot;from&quot; index and &quot;to&quot; index are a valid range
+									of bit indices and throws an exception if not.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p>[[RangeError]] if either parameter is less than zero or if the
+										from index is greater than the to index.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fromIndex: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The starting index.</p>
+									</div>
+								</li>
+								<li>
+									<h5>toIndex: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The ending index.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="fromwordarray" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> from<wbr>Word<wbr>Array</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">from<wbr>Word<wbr>Array<span class="tsd-signature-symbol">(</span>words<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_lib_bitset_.bitset.html" class="tsd-signature-type">BitSet</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/BitSet.ts#L99">src/lib/BitSet.ts:99</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets a new BitSet from the specified word array.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>words: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>An array of bits to convert into a BitSet.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_lib_bitset_.bitset.html" class="tsd-signature-type">BitSet</a></h4>
+							<p><a href="_lib_bitset_.bitset.html">BitSet</a> a new BitSet containing the specified bits.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="numberoftrailingzeros" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> number<wbr>OfTrailing<wbr>Zeros</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">number<wbr>OfTrailing<wbr>Zeros<span class="tsd-signature-symbol">(</span>n<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/BitSet.ts#L81">src/lib/BitSet.ts:81</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the number of trailing zeros in the specified number.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>n: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The number value to inspect.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>The number of trailing zeros.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="valueof" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> value<wbr>Of</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">value<wbr>Of<span class="tsd-signature-symbol">(</span>words<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_lib_bitset_.bitset.html" class="tsd-signature-type">BitSet</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/BitSet.ts#L110">src/lib/BitSet.ts:110</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns a new BitSet containing all the bits in the specified array of
+									numbers (bits).</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>words: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The array of bits to construct a BitSet from. If null,
+										then this function will return null.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_lib_bitset_.bitset.html" class="tsd-signature-type">BitSet</a></h4>
+							<p><a href="_lib_bitset_.bitset.html">BitSet</a> a new BitSet containing the specified array of bits.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="wordindex" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> word<wbr>Index</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">word<wbr>Index<span class="tsd-signature-symbol">(</span>bitIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/BitSet.ts#L50">src/lib/BitSet.ts:50</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Given the specified bit index, returns the word index containing it.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>bitIndex: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The bit index.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>The word index containing the specified bit index.</p>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-external-module">
+						<a href="../modules/_lib_bitset_.html">&quot;lib/<wbr>Bit<wbr>Set&quot;</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_lib_bitset_.bitset.html" class="tsd-kind-icon">Bit<wbr>Set</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="_lib_bitset_.bitset.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_lib_bitset_.bitset.html#bits" class="tsd-kind-icon">bits</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_lib_bitset_.bitset.html#name" class="tsd-kind-icon">name</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_lib_bitset_.bitset.html#sizeissticky" class="tsd-kind-icon">size<wbr>IsSticky</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_lib_bitset_.bitset.html#wordsinuse" class="tsd-kind-icon">words<wbr>InUse</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="_lib_bitset_.bitset.html#bit_index_mask" class="tsd-kind-icon">BIT_<wbr>INDEX_<wbr>MASK</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="_lib_bitset_.bitset.html#long_mask" class="tsd-kind-icon">LONG_<wbr>MASK</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="_lib_bitset_.bitset.html#cardinality" class="tsd-kind-icon">cardinality</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="_lib_bitset_.bitset.html#isempty" class="tsd-kind-icon">is<wbr>Empty</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="_lib_bitset_.bitset.html#length" class="tsd-kind-icon">length</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="_lib_bitset_.bitset.html#size" class="tsd-kind-icon">size</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_lib_bitset_.bitset.html#and" class="tsd-kind-icon">and</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_lib_bitset_.bitset.html#andnot" class="tsd-kind-icon">and<wbr>Not</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_lib_bitset_.bitset.html#checkinvariants" class="tsd-kind-icon">check<wbr>Invariants</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_lib_bitset_.bitset.html#clear" class="tsd-kind-icon">clear</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_lib_bitset_.bitset.html#clearfromto" class="tsd-kind-icon">clear<wbr>From<wbr>To</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_lib_bitset_.bitset.html#clone" class="tsd-kind-icon">clone</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_lib_bitset_.bitset.html#containsall" class="tsd-kind-icon">contains<wbr>All</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_lib_bitset_.bitset.html#ensurecapacity" class="tsd-kind-icon">ensure<wbr>Capacity</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_lib_bitset_.bitset.html#equals" class="tsd-kind-icon">equals</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_lib_bitset_.bitset.html#expandto" class="tsd-kind-icon">expand<wbr>To</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_lib_bitset_.bitset.html#flip" class="tsd-kind-icon">flip</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_lib_bitset_.bitset.html#flipfromto" class="tsd-kind-icon">flip<wbr>From<wbr>To</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_lib_bitset_.bitset.html#get" class="tsd-kind-icon">get</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_lib_bitset_.bitset.html#getbits" class="tsd-kind-icon">get<wbr>Bits</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_lib_bitset_.bitset.html#getfromto" class="tsd-kind-icon">get<wbr>From<wbr>To</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_lib_bitset_.bitset.html#gethashcode" class="tsd-kind-icon">get<wbr>Hash<wbr>Code</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_lib_bitset_.bitset.html#getwordsinuse" class="tsd-kind-icon">get<wbr>Words<wbr>InUse</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_lib_bitset_.bitset.html#intersects" class="tsd-kind-icon">intersects</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_lib_bitset_.bitset.html#nextclearbit" class="tsd-kind-icon">next<wbr>Clear<wbr>Bit</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_lib_bitset_.bitset.html#nextsetbit" class="tsd-kind-icon">next<wbr>Set<wbr>Bit</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_lib_bitset_.bitset.html#or" class="tsd-kind-icon">or</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_lib_bitset_.bitset.html#previousclearbit" class="tsd-kind-icon">previous<wbr>Clear<wbr>Bit</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_lib_bitset_.bitset.html#previoussetbit" class="tsd-kind-icon">previous<wbr>Set<wbr>Bit</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_lib_bitset_.bitset.html#recalculatewordsinuse" class="tsd-kind-icon">recalculate<wbr>Words<wbr>InUse</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_lib_bitset_.bitset.html#set" class="tsd-kind-icon">set</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_lib_bitset_.bitset.html#setbitvalue" class="tsd-kind-icon">set<wbr>Bit<wbr>Value</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_lib_bitset_.bitset.html#setfromto" class="tsd-kind-icon">set<wbr>From<wbr>To</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_lib_bitset_.bitset.html#setvalue" class="tsd-kind-icon">set<wbr>Value</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_lib_bitset_.bitset.html#setvaluefromto" class="tsd-kind-icon">set<wbr>Value<wbr>From<wbr>To</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_lib_bitset_.bitset.html#tobitarray" class="tsd-kind-icon">to<wbr>Bit<wbr>Array</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_lib_bitset_.bitset.html#tostring" class="tsd-kind-icon">to<wbr>String</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_lib_bitset_.bitset.html#trimtosize" class="tsd-kind-icon">trim<wbr>ToSize</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_lib_bitset_.bitset.html#xor" class="tsd-kind-icon">x<wbr>Or</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_lib_bitset_.bitset.html#checkrange" class="tsd-kind-icon">check<wbr>Range</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_lib_bitset_.bitset.html#fromwordarray" class="tsd-kind-icon">from<wbr>Word<wbr>Array</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_lib_bitset_.bitset.html#numberoftrailingzeros" class="tsd-kind-icon">number<wbr>OfTrailing<wbr>Zeros</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_lib_bitset_.bitset.html#valueof" class="tsd-kind-icon">value<wbr>Of</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_lib_bitset_.bitset.html#wordindex" class="tsd-kind-icon">word<wbr>Index</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_lib_bitset_.html#address_bits_per_word" class="tsd-kind-icon">ADDRESS_<wbr>BITS_<wbr>PER_<wbr>WORD</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_lib_bitset_.html#bits_per_word" class="tsd-kind-icon">BITS_<wbr>PER_<wbr>WORD</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>

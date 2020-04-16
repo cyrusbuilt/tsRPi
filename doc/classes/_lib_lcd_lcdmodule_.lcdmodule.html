@@ -1,0 +1,1447 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>LcdModule | tsrpi - v1.0.0</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">tsrpi - v1.0.0</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/_lib_lcd_lcdmodule_.html">&quot;lib/LCD/LcdModule&quot;</a>
+				</li>
+				<li>
+					<a href="_lib_lcd_lcdmodule_.lcdmodule.html">LcdModule</a>
+				</li>
+			</ul>
+			<h1>Class LcdModule</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<dl class="tsd-comment-tags">
+						<dt>classdesc</dt>
+						<dd><p>Hitachi HD44780-based LCD module control class, largely derived from:
+								Micro Liquid Crystal Library
+								<a href="http://microliquidcrystal.codeplex.com">http://microliquidcrystal.codeplex.com</a>
+								Appache License Version 2.0
+								This classes uses the LcdTransferProvider to provide
+							an interface between the Raspberry Pi and the LCD module via GPIO.</p>
+						</dd>
+						<dt>implements</dt>
+						<dd><p><a href="../interfaces/_lib_idisposable_.idisposable.html">IDisposable</a></p>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">LcdModule</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3>Implements</h3>
+				<ul class="tsd-hierarchy">
+					<li><a href="../interfaces/_lib_idisposable_.idisposable.html" class="tsd-signature-type">IDisposable</a></li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_lib_lcd_lcdmodule_.lcdmodule.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_lib_lcd_lcdmodule_.lcdmodule.html#backlight" class="tsd-kind-icon">backlight</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_lib_lcd_lcdmodule_.lcdmodule.html#displayfunction" class="tsd-kind-icon">display<wbr>Function</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_lib_lcd_lcdmodule_.lcdmodule.html#doesblinkcursor" class="tsd-kind-icon">does<wbr>Blink<wbr>Cursor</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_lib_lcd_lcdmodule_.lcdmodule.html#doesshowcursor" class="tsd-kind-icon">does<wbr>Show<wbr>Cursor</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_lib_lcd_lcdmodule_.lcdmodule.html#isvisible" class="tsd-kind-icon">is<wbr>Visible</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_lib_lcd_lcdmodule_.lcdmodule.html#numcolumns" class="tsd-kind-icon">num<wbr>Columns</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_lib_lcd_lcdmodule_.lcdmodule.html#numlines" class="tsd-kind-icon">num<wbr>Lines</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_lib_lcd_lcdmodule_.lcdmodule.html#objdisposed" class="tsd-kind-icon">obj<wbr>Disposed</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_lib_lcd_lcdmodule_.lcdmodule.html#rowoffsets" class="tsd-kind-icon">row<wbr>Offsets</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_lib_lcd_lcdmodule_.lcdmodule.html#sendqueue" class="tsd-kind-icon">send<wbr>Queue</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_lib_lcd_lcdmodule_.lcdmodule.html#xferprovider" class="tsd-kind-icon">xfer<wbr>Provider</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Accessors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_lib_lcd_lcdmodule_.lcdmodule.html#backlightenabled" class="tsd-kind-icon">backlight<wbr>Enabled</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_lib_lcd_lcdmodule_.lcdmodule.html#blinkcursor" class="tsd-kind-icon">blink<wbr>Cursor</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_lib_lcd_lcdmodule_.lcdmodule.html#columns" class="tsd-kind-icon">columns</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_lib_lcd_lcdmodule_.lcdmodule.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_lib_lcd_lcdmodule_.lcdmodule.html#provider" class="tsd-kind-icon">provider</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_lib_lcd_lcdmodule_.lcdmodule.html#rows" class="tsd-kind-icon">rows</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_lib_lcd_lcdmodule_.lcdmodule.html#showcursor" class="tsd-kind-icon">show<wbr>Cursor</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_lib_lcd_lcdmodule_.lcdmodule.html#visible" class="tsd-kind-icon">visible</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_lcd_lcdmodule_.lcdmodule.html#begin" class="tsd-kind-icon">begin</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_lcd_lcdmodule_.lcdmodule.html#clear" class="tsd-kind-icon">clear</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_lcd_lcdmodule_.lcdmodule.html#createchar" class="tsd-kind-icon">create<wbr>Char</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_lcd_lcdmodule_.lcdmodule.html#dispose" class="tsd-kind-icon">dispose</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_lib_lcd_lcdmodule_.lcdmodule.html#enqueuecommand" class="tsd-kind-icon">enqueue<wbr>Command</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_lcd_lcdmodule_.lcdmodule.html#movecursor" class="tsd-kind-icon">move<wbr>Cursor</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_lib_lcd_lcdmodule_.lcdmodule.html#processsendqueue" class="tsd-kind-icon">process<wbr>Send<wbr>Queue</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_lcd_lcdmodule_.lcdmodule.html#returnhome" class="tsd-kind-icon">return<wbr>Home</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_lcd_lcdmodule_.lcdmodule.html#scrolldisplayleft" class="tsd-kind-icon">scroll<wbr>Display<wbr>Left</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_lcd_lcdmodule_.lcdmodule.html#scrolldisplayright" class="tsd-kind-icon">scroll<wbr>Display<wbr>Right</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_lcd_lcdmodule_.lcdmodule.html#sendcommand" class="tsd-kind-icon">send<wbr>Command</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_lcd_lcdmodule_.lcdmodule.html#setbacklightenabled" class="tsd-kind-icon">set<wbr>Backlight<wbr>Enabled</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_lcd_lcdmodule_.lcdmodule.html#setblinkcursor" class="tsd-kind-icon">set<wbr>Blink<wbr>Cursor</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_lcd_lcdmodule_.lcdmodule.html#setcursorposition" class="tsd-kind-icon">set<wbr>Cursor<wbr>Position</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_lcd_lcdmodule_.lcdmodule.html#setshowcursor" class="tsd-kind-icon">set<wbr>Show<wbr>Cursor</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_lcd_lcdmodule_.lcdmodule.html#setvisible" class="tsd-kind-icon">set<wbr>Visible</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_lib_lcd_lcdmodule_.lcdmodule.html#updatedisplaycontrol" class="tsd-kind-icon">update<wbr>Display<wbr>Control</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_lcd_lcdmodule_.lcdmodule.html#write" class="tsd-kind-icon">write</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_lcd_lcdmodule_.lcdmodule.html#writebyte" class="tsd-kind-icon">write<wbr>Byte</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_lcd_lcdmodule_.lcdmodule.html#writestring" class="tsd-kind-icon">write<wbr>String</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Lcd<wbr>Module<span class="tsd-signature-symbol">(</span>provider<span class="tsd-signature-symbol">: </span><a href="../interfaces/_lib_lcd_ilcdtransferprovider_.ilcdtransferprovider.html" class="tsd-signature-type">ILcdTransferProvider</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_lib_lcd_lcdmodule_.lcdmodule.html" class="tsd-signature-type">LcdModule</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/LCD/LcdModule.ts#L32">src/lib/LCD/LcdModule.ts:32</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Initializes a new instance of the jsrpi.LCD.LcdModule class with the
+									transfer provider.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>provider: <a href="../interfaces/_lib_lcd_ilcdtransferprovider_.ilcdtransferprovider.html" class="tsd-signature-type">ILcdTransferProvider</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The transfer provider to use to send
+											data and commands to the display.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_lib_lcd_lcdmodule_.lcdmodule.html" class="tsd-signature-type">LcdModule</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="backlight" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> backlight</h3>
+					<div class="tsd-signature tsd-kind-icon">backlight<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/LCD/LcdModule.ts#L24">src/lib/LCD/LcdModule.ts:24</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="displayfunction" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> display<wbr>Function</h3>
+					<div class="tsd-signature tsd-kind-icon">display<wbr>Function<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/LCD/LcdModule.ts#L29">src/lib/LCD/LcdModule.ts:29</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="doesblinkcursor" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> does<wbr>Blink<wbr>Cursor</h3>
+					<div class="tsd-signature tsd-kind-icon">does<wbr>Blink<wbr>Cursor<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/LCD/LcdModule.ts#L27">src/lib/LCD/LcdModule.ts:27</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="doesshowcursor" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> does<wbr>Show<wbr>Cursor</h3>
+					<div class="tsd-signature tsd-kind-icon">does<wbr>Show<wbr>Cursor<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/LCD/LcdModule.ts#L26">src/lib/LCD/LcdModule.ts:26</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="isvisible" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> is<wbr>Visible</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Visible<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/LCD/LcdModule.ts#L25">src/lib/LCD/LcdModule.ts:25</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="numcolumns" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> num<wbr>Columns</h3>
+					<div class="tsd-signature tsd-kind-icon">num<wbr>Columns<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/LCD/LcdModule.ts#L31">src/lib/LCD/LcdModule.ts:31</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="numlines" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> num<wbr>Lines</h3>
+					<div class="tsd-signature tsd-kind-icon">num<wbr>Lines<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/LCD/LcdModule.ts#L30">src/lib/LCD/LcdModule.ts:30</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="objdisposed" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> obj<wbr>Disposed</h3>
+					<div class="tsd-signature tsd-kind-icon">obj<wbr>Disposed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/LCD/LcdModule.ts#L22">src/lib/LCD/LcdModule.ts:22</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="rowoffsets" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> row<wbr>Offsets</h3>
+					<div class="tsd-signature tsd-kind-icon">row<wbr>Offsets<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/LCD/LcdModule.ts#L32">src/lib/LCD/LcdModule.ts:32</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="sendqueue" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> send<wbr>Queue</h3>
+					<div class="tsd-signature tsd-kind-icon">send<wbr>Queue<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/LCD/LcdModule.ts#L28">src/lib/LCD/LcdModule.ts:28</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="xferprovider" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> xfer<wbr>Provider</h3>
+					<div class="tsd-signature tsd-kind-icon">xfer<wbr>Provider<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_lib_lcd_ilcdtransferprovider_.ilcdtransferprovider.html" class="tsd-signature-type">ILcdTransferProvider</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/LCD/LcdModule.ts#L23">src/lib/LCD/LcdModule.ts:23</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Accessors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="backlightenabled" class="tsd-anchor"></a>
+					<h3>backlight<wbr>Enabled</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> backlightEnabled<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/LCD/LcdModule.ts#L160">src/lib/LCD/LcdModule.ts:160</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets a flag indicating whether or not the backlight is enabled.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>readonly</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="blinkcursor" class="tsd-anchor"></a>
+					<h3>blink<wbr>Cursor</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> blinkCursor<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/LCD/LcdModule.ts#L118">src/lib/LCD/LcdModule.ts:118</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets a flag indicating whether or not the cursor should blink.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>readonly</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="columns" class="tsd-anchor"></a>
+					<h3>columns</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> columns<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/LCD/LcdModule.ts#L90">src/lib/LCD/LcdModule.ts:90</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the number of columns.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>readonly</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="isdisposed" class="tsd-anchor"></a>
+					<h3>is<wbr>Disposed</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> isDisposed<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/LCD/LcdModule.ts#L66">src/lib/LCD/LcdModule.ts:66</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Determines whether or not the current instance has been disposed.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>readonly</dt>
+									<dd></dd>
+									<dt>override</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="provider" class="tsd-anchor"></a>
+					<h3>provider</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> provider<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_lib_lcd_ilcdtransferprovider_.ilcdtransferprovider.html" class="tsd-signature-type">ILcdTransferProvider</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/LCD/LcdModule.ts#L74">src/lib/LCD/LcdModule.ts:74</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the LCD transfer provider.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>readonly</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_lib_lcd_ilcdtransferprovider_.ilcdtransferprovider.html" class="tsd-signature-type">ILcdTransferProvider</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="rows" class="tsd-anchor"></a>
+					<h3>rows</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> rows<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/LCD/LcdModule.ts#L82">src/lib/LCD/LcdModule.ts:82</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the number of rows.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>readonly</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="showcursor" class="tsd-anchor"></a>
+					<h3>show<wbr>Cursor</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> showCursor<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/LCD/LcdModule.ts#L98">src/lib/LCD/LcdModule.ts:98</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets a flag indicating whether or not to show the cursor.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>readonly</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="visible" class="tsd-anchor"></a>
+					<h3>visible</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> visible<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/LCD/LcdModule.ts#L139">src/lib/LCD/LcdModule.ts:139</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets a flag indicating whether or not the LCD display is turned on
+									or off.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>readonly</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="begin" class="tsd-anchor"></a>
+					<h3>begin</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">begin<span class="tsd-signature-symbol">(</span>columns<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, lines<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, leftToRight<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span>, dotSize<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/LCD/LcdModule.ts#L314">src/lib/LCD/LcdModule.ts:314</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Initializes the LCD. Specifies dimensions (width and height)
+									of the display.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p><a href="_lib_objectdisposedexception_.objectdisposedexception.html">ObjectDisposedException</a> if this instance has been disposed.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>columns: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The number of columns that the display has.</p>
+									</div>
+								</li>
+								<li>
+									<h5>lines: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The number of rows the display has.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> leftToRight: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>If set to true left to right, versus right to left.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> dotSize: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>If set true and only one line set, then the
+										font size will be set 10px high.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="clear" class="tsd-anchor"></a>
+					<h3>clear</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">clear<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/LCD/LcdModule.ts#L299">src/lib/LCD/LcdModule.ts:299</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Clears the LCD screen and positions the cursor in the upper-left
+									corner of the display.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p><a href="_lib_objectdisposedexception_.objectdisposedexception.html">ObjectDisposedException</a> if this instance has been disposed.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="createchar" class="tsd-anchor"></a>
+					<h3>create<wbr>Char</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Char<span class="tsd-signature-symbol">(</span>location<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, charmap<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span>, offset<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/LCD/LcdModule.ts#L206">src/lib/LCD/LcdModule.ts:206</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Creates a custom character (glyph) for use on the LCD. Up to eight
+										characters of 5x8 pixels are supported (numbered 0 - 7). The appearance of
+										each custom character is specified by an array of eight bytes, one for each
+										row. The five least significan bits of each byte determine the pixels in
+										that row. To display a custom character on the screen, call writeByte() and
+									pass its number.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p><a href="_lib_objectdisposedexception_.objectdisposedexception.html">ObjectDisposedException</a> if this instance has been disposed.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>location: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Which character to create (0 - 7).</p>
+									</div>
+								</li>
+								<li>
+									<h5>charmap: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The character&#39;s pixel data.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> offset: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Offset in the charmap where character data is found.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="dispose" class="tsd-anchor"></a>
+					<h3>dispose</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">dispose<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_lib_idisposable_.idisposable.html">IDisposable</a>.<a href="../interfaces/_lib_idisposable_.idisposable.html#dispose">dispose</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/LCD/LcdModule.ts#L381">src/lib/LCD/LcdModule.ts:381</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Releases all managed resources used by this instance.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>override</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="enqueuecommand" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> enqueue<wbr>Command</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">enqueue<wbr>Command<span class="tsd-signature-symbol">(</span>cmd<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/LCD/LcdModule.ts#L426">src/lib/LCD/LcdModule.ts:426</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>cmd: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="movecursor" class="tsd-anchor"></a>
+					<h3>move<wbr>Cursor</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">move<wbr>Cursor<span class="tsd-signature-symbol">(</span>right<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/LCD/LcdModule.ts#L244">src/lib/LCD/LcdModule.ts:244</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Moves the cursor left or right.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p><a href="_lib_objectdisposedexception_.objectdisposedexception.html">ObjectDisposedException</a> if this instance has been disposed.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>right: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Set true to move the cursor right; false to move left.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="processsendqueue" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> process<wbr>Send<wbr>Queue</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">process<wbr>Send<wbr>Queue<span class="tsd-signature-symbol">(</span>timeout<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/LCD/LcdModule.ts#L405">src/lib/LCD/LcdModule.ts:405</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>timeout: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="returnhome" class="tsd-anchor"></a>
+					<h3>return<wbr>Home</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">return<wbr>Home<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/LCD/LcdModule.ts#L289">src/lib/LCD/LcdModule.ts:289</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Positions the cursor in the upper-left of the LCD (home position).
+										That is, use that location in outputting subsequent text to the
+										display. To also clear the display, use the clear()
+									method instead.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p><a href="_lib_objectdisposedexception_.objectdisposedexception.html">ObjectDisposedException</a> if this instance has been disposed.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="scrolldisplayleft" class="tsd-anchor"></a>
+					<h3>scroll<wbr>Display<wbr>Left</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">scroll<wbr>Display<wbr>Left<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/LCD/LcdModule.ts#L262">src/lib/LCD/LcdModule.ts:262</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Scrolls the contents of the display (text and cursor) one
+									space to the left.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p><a href="_lib_objectdisposedexception_.objectdisposedexception.html">ObjectDisposedException</a> if this instance has been disposed.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="scrolldisplayright" class="tsd-anchor"></a>
+					<h3>scroll<wbr>Display<wbr>Right</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">scroll<wbr>Display<wbr>Right<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/LCD/LcdModule.ts#L253">src/lib/LCD/LcdModule.ts:253</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Scrolls the contents of the display (text and cursor) one
+									space to the right.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p><a href="_lib_objectdisposedexception_.objectdisposedexception.html">ObjectDisposedException</a> if this instance has been disposed.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="sendcommand" class="tsd-anchor"></a>
+					<h3>send<wbr>Command</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">send<wbr>Command<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/LCD/LcdModule.ts#L181">src/lib/LCD/LcdModule.ts:181</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sends a command to the display.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p><a href="_lib_objectdisposedexception_.objectdisposedexception.html">ObjectDisposedException</a> if this instance has been disposed.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>data: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The data or command to send.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setbacklightenabled" class="tsd-anchor"></a>
+					<h3>set<wbr>Backlight<wbr>Enabled</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Backlight<wbr>Enabled<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/LCD/LcdModule.ts#L169">src/lib/LCD/LcdModule.ts:169</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets a flag indicating whether or not the backlight is enabled.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p><a href="_lib_objectdisposedexception_.objectdisposedexception.html">ObjectDisposedException</a> if this instance has been disposed.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>value: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Set true to enable the backlight.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setblinkcursor" class="tsd-anchor"></a>
+					<h3>set<wbr>Blink<wbr>Cursor</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Blink<wbr>Cursor<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/LCD/LcdModule.ts#L127">src/lib/LCD/LcdModule.ts:127</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets a flag indicating whether or not the cursor should blink.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p><a href="_lib_objectdisposedexception_.objectdisposedexception.html">ObjectDisposedException</a> if this instance has been disposed.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>value: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Set true to blink cursor.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setcursorposition" class="tsd-anchor"></a>
+					<h3>set<wbr>Cursor<wbr>Position</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Cursor<wbr>Position<span class="tsd-signature-symbol">(</span>column<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, row<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/LCD/LcdModule.ts#L273">src/lib/LCD/LcdModule.ts:273</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Position the LCD cursor; that is, set the location at which
+									subsequent text written to the LCD will be displayed.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p><a href="_lib_objectdisposedexception_.objectdisposedexception.html">ObjectDisposedException</a> if this instance has been disposed.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>column: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The column position.</p>
+									</div>
+								</li>
+								<li>
+									<h5>row: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The row position.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setshowcursor" class="tsd-anchor"></a>
+					<h3>set<wbr>Show<wbr>Cursor</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Show<wbr>Cursor<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/LCD/LcdModule.ts#L107">src/lib/LCD/LcdModule.ts:107</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets a flag indicating whether or not to show the cursor.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p><a href="_lib_objectdisposedexception_.objectdisposedexception.html">ObjectDisposedException</a> if this instance has been disposed.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>value: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Set true to show the cursor.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setvisible" class="tsd-anchor"></a>
+					<h3>set<wbr>Visible</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Visible<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/LCD/LcdModule.ts#L149">src/lib/LCD/LcdModule.ts:149</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets a flag indicating whether or not the LCD display is turned on
+									or off.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p><a href="_lib_objectdisposedexception_.objectdisposedexception.html">ObjectDisposedException</a> if this instance has been disposed.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>value: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Set true to turn on the display.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="updatedisplaycontrol" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> update<wbr>Display<wbr>Control</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">update<wbr>Display<wbr>Control<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/LCD/LcdModule.ts#L395">src/lib/LCD/LcdModule.ts:395</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="write" class="tsd-anchor"></a>
+					<h3>write</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">write<span class="tsd-signature-symbol">(</span>buffer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Buffer</span>, offset<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, count<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/LCD/LcdModule.ts#L222">src/lib/LCD/LcdModule.ts:222</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Writes a specified number of bytes to the LCD using data from a buffer.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p><a href="_lib_objectdisposedexception_.objectdisposedexception.html">ObjectDisposedException</a> if this instance has been disposed.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>buffer: <span class="tsd-signature-type">Buffer</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The byte array containing data to write to the display.</p>
+									</div>
+								</li>
+								<li>
+									<h5>offset: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The zero-base byte offset in the buffer at which to
+										begin copying bytes.</p>
+									</div>
+								</li>
+								<li>
+									<h5>count: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The number of bytes to write.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="writebyte" class="tsd-anchor"></a>
+					<h3>write<wbr>Byte</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">write<wbr>Byte<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/LCD/LcdModule.ts#L190">src/lib/LCD/LcdModule.ts:190</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sends on data byte to the display.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p><a href="_lib_objectdisposedexception_.objectdisposedexception.html">ObjectDisposedException</a> if this instance has been disposed.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>data: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The data to send.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="writestring" class="tsd-anchor"></a>
+					<h3>write<wbr>String</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">write<wbr>String<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/LCD/LcdModule.ts#L234">src/lib/LCD/LcdModule.ts:234</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Writes text to the LCD.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p><a href="_lib_objectdisposedexception_.objectdisposedexception.html">ObjectDisposedException</a> if this instance has been disposed.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>str: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The text to display.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-external-module">
+						<a href="../modules/_lib_lcd_lcdmodule_.html">&quot;lib/LCD/<wbr>Lcd<wbr>Module&quot;</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_lib_lcd_lcdmodule_.lcdmodule.html" class="tsd-kind-icon">Lcd<wbr>Module</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="_lib_lcd_lcdmodule_.lcdmodule.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_lib_lcd_lcdmodule_.lcdmodule.html#backlight" class="tsd-kind-icon">backlight</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_lib_lcd_lcdmodule_.lcdmodule.html#displayfunction" class="tsd-kind-icon">display<wbr>Function</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_lib_lcd_lcdmodule_.lcdmodule.html#doesblinkcursor" class="tsd-kind-icon">does<wbr>Blink<wbr>Cursor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_lib_lcd_lcdmodule_.lcdmodule.html#doesshowcursor" class="tsd-kind-icon">does<wbr>Show<wbr>Cursor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_lib_lcd_lcdmodule_.lcdmodule.html#isvisible" class="tsd-kind-icon">is<wbr>Visible</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_lib_lcd_lcdmodule_.lcdmodule.html#numcolumns" class="tsd-kind-icon">num<wbr>Columns</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_lib_lcd_lcdmodule_.lcdmodule.html#numlines" class="tsd-kind-icon">num<wbr>Lines</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_lib_lcd_lcdmodule_.lcdmodule.html#objdisposed" class="tsd-kind-icon">obj<wbr>Disposed</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_lib_lcd_lcdmodule_.lcdmodule.html#rowoffsets" class="tsd-kind-icon">row<wbr>Offsets</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_lib_lcd_lcdmodule_.lcdmodule.html#sendqueue" class="tsd-kind-icon">send<wbr>Queue</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_lib_lcd_lcdmodule_.lcdmodule.html#xferprovider" class="tsd-kind-icon">xfer<wbr>Provider</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="_lib_lcd_lcdmodule_.lcdmodule.html#backlightenabled" class="tsd-kind-icon">backlight<wbr>Enabled</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="_lib_lcd_lcdmodule_.lcdmodule.html#blinkcursor" class="tsd-kind-icon">blink<wbr>Cursor</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="_lib_lcd_lcdmodule_.lcdmodule.html#columns" class="tsd-kind-icon">columns</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="_lib_lcd_lcdmodule_.lcdmodule.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="_lib_lcd_lcdmodule_.lcdmodule.html#provider" class="tsd-kind-icon">provider</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="_lib_lcd_lcdmodule_.lcdmodule.html#rows" class="tsd-kind-icon">rows</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="_lib_lcd_lcdmodule_.lcdmodule.html#showcursor" class="tsd-kind-icon">show<wbr>Cursor</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="_lib_lcd_lcdmodule_.lcdmodule.html#visible" class="tsd-kind-icon">visible</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_lib_lcd_lcdmodule_.lcdmodule.html#begin" class="tsd-kind-icon">begin</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_lib_lcd_lcdmodule_.lcdmodule.html#clear" class="tsd-kind-icon">clear</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_lib_lcd_lcdmodule_.lcdmodule.html#createchar" class="tsd-kind-icon">create<wbr>Char</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_lib_lcd_lcdmodule_.lcdmodule.html#dispose" class="tsd-kind-icon">dispose</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_lib_lcd_lcdmodule_.lcdmodule.html#enqueuecommand" class="tsd-kind-icon">enqueue<wbr>Command</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_lib_lcd_lcdmodule_.lcdmodule.html#movecursor" class="tsd-kind-icon">move<wbr>Cursor</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_lib_lcd_lcdmodule_.lcdmodule.html#processsendqueue" class="tsd-kind-icon">process<wbr>Send<wbr>Queue</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_lib_lcd_lcdmodule_.lcdmodule.html#returnhome" class="tsd-kind-icon">return<wbr>Home</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_lib_lcd_lcdmodule_.lcdmodule.html#scrolldisplayleft" class="tsd-kind-icon">scroll<wbr>Display<wbr>Left</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_lib_lcd_lcdmodule_.lcdmodule.html#scrolldisplayright" class="tsd-kind-icon">scroll<wbr>Display<wbr>Right</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_lib_lcd_lcdmodule_.lcdmodule.html#sendcommand" class="tsd-kind-icon">send<wbr>Command</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_lib_lcd_lcdmodule_.lcdmodule.html#setbacklightenabled" class="tsd-kind-icon">set<wbr>Backlight<wbr>Enabled</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_lib_lcd_lcdmodule_.lcdmodule.html#setblinkcursor" class="tsd-kind-icon">set<wbr>Blink<wbr>Cursor</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_lib_lcd_lcdmodule_.lcdmodule.html#setcursorposition" class="tsd-kind-icon">set<wbr>Cursor<wbr>Position</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_lib_lcd_lcdmodule_.lcdmodule.html#setshowcursor" class="tsd-kind-icon">set<wbr>Show<wbr>Cursor</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_lib_lcd_lcdmodule_.lcdmodule.html#setvisible" class="tsd-kind-icon">set<wbr>Visible</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_lib_lcd_lcdmodule_.lcdmodule.html#updatedisplaycontrol" class="tsd-kind-icon">update<wbr>Display<wbr>Control</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_lib_lcd_lcdmodule_.lcdmodule.html#write" class="tsd-kind-icon">write</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_lib_lcd_lcdmodule_.lcdmodule.html#writebyte" class="tsd-kind-icon">write<wbr>Byte</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_lib_lcd_lcdmodule_.lcdmodule.html#writestring" class="tsd-kind-icon">write<wbr>String</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>

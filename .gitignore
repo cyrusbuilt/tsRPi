@@ -72,7 +72,6 @@ build/
 dist/
 
 # Doc output
-doc/
 
 # Test coverage reports
 coverage/

@@ -1,0 +1,1848 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>GpioBase | tsrpi - v1.0.0</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">tsrpi - v1.0.0</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/_lib_io_gpiobase_.html">&quot;lib/IO/GpioBase&quot;</a>
+				</li>
+				<li>
+					<a href="_lib_io_gpiobase_.gpiobase.html">GpioBase</a>
+				</li>
+			</ul>
+			<h1>Class GpioBase</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<dl class="tsd-comment-tags">
+						<dt>classdesc</dt>
+						<dd><p>Base class for the GPIO connector on the Raspberry Pi pin header.</p>
+						</dd>
+						<dt>extends</dt>
+						<dd><p>[[EventEmitter.EventEmitter]]</p>
+						</dd>
+						<dt>implements</dt>
+						<dd><p><a href="../interfaces/_lib_io_iraspigpio_.iraspigpio.html">IRaspiGpio</a></p>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="tsd-signature-type">EventEmitter</span>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">GpioBase</span>
+								<ul class="tsd-hierarchy">
+									<li>
+										<a href="_lib_io_gpiostandard_.gpiostandard.html" class="tsd-signature-type">GpioStandard</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3>Implements</h3>
+				<ul class="tsd-hierarchy">
+					<li><a href="../interfaces/_lib_io_iraspigpio_.iraspigpio.html" class="tsd-signature-type">IRaspiGpio</a></li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_lib_io_gpiobase_.gpiobase.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Events</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-event tsd-parent-kind-class tsd-is-static"><a href="_lib_io_gpiobase_.gpiobase.html#event_state_changed" class="tsd-kind-icon">EVENT_<wbr>STATE_<wbr>CHANGED</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_lib_io_gpiobase_.gpiobase.html#boardrevision" class="tsd-kind-icon">board<wbr>Revision</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_lib_io_gpiobase_.gpiobase.html#disposed" class="tsd-kind-icon">disposed</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_lib_io_gpiobase_.gpiobase.html#initvalue" class="tsd-kind-icon">init<wbr>Value</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_lib_io_gpiobase_.gpiobase.html#pin" class="tsd-kind-icon">pin</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_lib_io_gpiobase_.gpiobase.html#pinmode" class="tsd-kind-icon">pin<wbr>Mode</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_lib_io_gpiobase_.gpiobase.html#pinpwm" class="tsd-kind-icon">pin<wbr>Pwm</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_lib_io_gpiobase_.gpiobase.html#pinpwmrange" class="tsd-kind-icon">pin<wbr>Pwm<wbr>Range</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_lib_io_gpiobase_.gpiobase.html#pinstate" class="tsd-kind-icon">pin<wbr>State</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_lib_io_gpiobase_.gpiobase.html#pintag" class="tsd-kind-icon">pin<wbr>Tag</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_lib_io_gpiobase_.gpiobase.html#defaultmaxlisteners" class="tsd-kind-icon">default<wbr>Max<wbr>Listeners</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Accessors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_lib_io_gpiobase_.gpiobase.html#address" class="tsd-kind-icon">address</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_lib_io_gpiobase_.gpiobase.html#innerpin" class="tsd-kind-icon">inner<wbr>Pin</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_lib_io_gpiobase_.gpiobase.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a></li>
+								<li class="tsd-kind-accessor tsd-parent-kind-class"><a href="_lib_io_gpiobase_.gpiobase.html#mode" class="tsd-kind-icon">mode</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_lib_io_gpiobase_.gpiobase.html#pinname" class="tsd-kind-icon">pin<wbr>Name</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_lib_io_gpiobase_.gpiobase.html#pwm" class="tsd-kind-icon">pwm</a></li>
+								<li class="tsd-kind-accessor tsd-parent-kind-class"><a href="_lib_io_gpiobase_.gpiobase.html#pwmrange" class="tsd-kind-icon">pwm<wbr>Range</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_lib_io_gpiobase_.gpiobase.html#revision" class="tsd-kind-icon">revision</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_lib_io_gpiobase_.gpiobase.html#state" class="tsd-kind-icon">state</a></li>
+								<li class="tsd-kind-accessor tsd-parent-kind-class"><a href="_lib_io_gpiobase_.gpiobase.html#tag" class="tsd-kind-icon">tag</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_lib_io_gpiobase_.gpiobase.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_io_gpiobase_.gpiobase.html#addpinstatechangelistener" class="tsd-kind-icon">add<wbr>Pin<wbr>State<wbr>Change<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_io_gpiobase_.gpiobase.html#changeboardrevision" class="tsd-kind-icon">change<wbr>Board<wbr>Revision</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_io_gpiobase_.gpiobase.html#dispose" class="tsd-kind-icon">dispose</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_lib_io_gpiobase_.gpiobase.html#emit" class="tsd-kind-icon">emit</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_lib_io_gpiobase_.gpiobase.html#eventnames" class="tsd-kind-icon">event<wbr>Names</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_io_gpiobase_.gpiobase.html#getinitialpinvalue" class="tsd-kind-icon">get<wbr>Initial<wbr>Pin<wbr>Value</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_lib_io_gpiobase_.gpiobase.html#getmaxlisteners" class="tsd-kind-icon">get<wbr>Max<wbr>Listeners</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_lib_io_gpiobase_.gpiobase.html#listenercount" class="tsd-kind-icon">listener<wbr>Count</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_lib_io_gpiobase_.gpiobase.html#listeners" class="tsd-kind-icon">listeners</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_lib_io_gpiobase_.gpiobase.html#off" class="tsd-kind-icon">off</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_lib_io_gpiobase_.gpiobase.html#on" class="tsd-kind-icon">on</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_io_gpiobase_.gpiobase.html#onpinstatechange" class="tsd-kind-icon">on<wbr>Pin<wbr>State<wbr>Change</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_lib_io_gpiobase_.gpiobase.html#once" class="tsd-kind-icon">once</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_lib_io_gpiobase_.gpiobase.html#prependlistener" class="tsd-kind-icon">prepend<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_lib_io_gpiobase_.gpiobase.html#prependoncelistener" class="tsd-kind-icon">prepend<wbr>Once<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_io_gpiobase_.gpiobase.html#provision" class="tsd-kind-icon">provision</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_io_gpiobase_.gpiobase.html#pulse" class="tsd-kind-icon">pulse</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_lib_io_gpiobase_.gpiobase.html#rawlisteners" class="tsd-kind-icon">raw<wbr>Listeners</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_io_gpiobase_.gpiobase.html#read" class="tsd-kind-icon">read</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_lib_io_gpiobase_.gpiobase.html#removealllisteners" class="tsd-kind-icon">remove<wbr>All<wbr>Listeners</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_lib_io_gpiobase_.gpiobase.html#removelistener" class="tsd-kind-icon">remove<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_lib_io_gpiobase_.gpiobase.html#setmaxlisteners" class="tsd-kind-icon">set<wbr>Max<wbr>Listeners</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_io_gpiobase_.gpiobase.html#setpwm" class="tsd-kind-icon">set<wbr>Pwm</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_io_gpiobase_.gpiobase.html#write" class="tsd-kind-icon">write</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_lib_io_gpiobase_.gpiobase.html#listenercount-1" class="tsd-kind-icon">listener<wbr>Count</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Gpio<wbr>Base<span class="tsd-signature-symbol">(</span>pin<span class="tsd-signature-symbol">: </span><a href="../enums/_lib_io_gpiopins_.gpiopins.html" class="tsd-signature-type">GpioPins</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, mode<span class="tsd-signature-symbol">?: </span><a href="../enums/_lib_io_pinmode_.pinmode.html" class="tsd-signature-type">PinMode</a>, value<span class="tsd-signature-symbol">?: </span><a href="../enums/_lib_io_pinstate_.pinstate.html" class="tsd-signature-type">PinState</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_lib_io_gpiobase_.gpiobase.html" class="tsd-signature-type">GpioBase</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/IO/GpioBase.ts#L35">src/lib/IO/GpioBase.ts:35</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Initalizes a new instance of the <a href="_lib_io_gpiobase_.gpiobase.html">GpioBase</a> class with the pin the
+									GPIO is assigned to, the pin mode, and initial value.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>constructor</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>pin: <a href="../enums/_lib_io_gpiopins_.gpiopins.html" class="tsd-signature-type">GpioPins</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The GPIO pin.</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> mode: <a href="../enums/_lib_io_pinmode_.pinmode.html" class="tsd-signature-type">PinMode</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The I/O pin mode.</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> value: <a href="../enums/_lib_io_pinstate_.pinstate.html" class="tsd-signature-type">PinState</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The initial pin value.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_lib_io_gpiobase_.gpiobase.html" class="tsd-signature-type">GpioBase</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Events</h2>
+				<section class="tsd-panel tsd-member tsd-kind-event tsd-parent-kind-class tsd-is-static">
+					<a name="event_state_changed" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> EVENT_<wbr>STATE_<wbr>CHANGED</h3>
+					<div class="tsd-signature tsd-kind-icon">EVENT_<wbr>STATE_<wbr>CHANGED<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"pinStateChanged"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;pinStateChanged&quot;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/IO/GpioBase.ts#L25">src/lib/IO/GpioBase.ts:25</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The pin state change event name.</p>
+						</div>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="boardrevision" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> board<wbr>Revision</h3>
+					<div class="tsd-signature tsd-kind-icon">board<wbr>Revision<span class="tsd-signature-symbol">:</span> <a href="../enums/_lib_boardrevision_.boardrevision.html" class="tsd-signature-type">BoardRevision</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/IO/GpioBase.ts#L34">src/lib/IO/GpioBase.ts:34</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="disposed" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> disposed</h3>
+					<div class="tsd-signature tsd-kind-icon">disposed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/IO/GpioBase.ts#L33">src/lib/IO/GpioBase.ts:33</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="initvalue" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> init<wbr>Value</h3>
+					<div class="tsd-signature tsd-kind-icon">init<wbr>Value<span class="tsd-signature-symbol">:</span> <a href="../enums/_lib_io_pinstate_.pinstate.html" class="tsd-signature-type">PinState</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/IO/GpioBase.ts#L32">src/lib/IO/GpioBase.ts:32</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="pin" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> pin</h3>
+					<div class="tsd-signature tsd-kind-icon">pin<span class="tsd-signature-symbol">:</span> <a href="../enums/_lib_io_gpiopins_.gpiopins.html" class="tsd-signature-type">GpioPins</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/IO/GpioBase.ts#L30">src/lib/IO/GpioBase.ts:30</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="pinmode" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> pin<wbr>Mode</h3>
+					<div class="tsd-signature tsd-kind-icon">pin<wbr>Mode<span class="tsd-signature-symbol">:</span> <a href="../enums/_lib_io_pinmode_.pinmode.html" class="tsd-signature-type">PinMode</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/IO/GpioBase.ts#L31">src/lib/IO/GpioBase.ts:31</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="pinpwm" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> pin<wbr>Pwm</h3>
+					<div class="tsd-signature tsd-kind-icon">pin<wbr>Pwm<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/IO/GpioBase.ts#L28">src/lib/IO/GpioBase.ts:28</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="pinpwmrange" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> pin<wbr>Pwm<wbr>Range</h3>
+					<div class="tsd-signature tsd-kind-icon">pin<wbr>Pwm<wbr>Range<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/IO/GpioBase.ts#L29">src/lib/IO/GpioBase.ts:29</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="pinstate" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> pin<wbr>State</h3>
+					<div class="tsd-signature tsd-kind-icon">pin<wbr>State<span class="tsd-signature-symbol">:</span> <a href="../enums/_lib_io_pinstate_.pinstate.html" class="tsd-signature-type">PinState</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/IO/GpioBase.ts#L27">src/lib/IO/GpioBase.ts:27</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="pintag" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> pin<wbr>Tag</h3>
+					<div class="tsd-signature tsd-kind-icon">pin<wbr>Tag<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/IO/GpioBase.ts#L35">src/lib/IO/GpioBase.ts:35</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+					<a name="defaultmaxlisteners" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> default<wbr>Max<wbr>Listeners</h3>
+					<div class="tsd-signature tsd-kind-icon">default<wbr>Max<wbr>Listeners<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from EventEmitter.defaultMaxListeners</p>
+						<ul>
+							<li>Defined in node_modules/@types/node/events.d.ts:18</li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Accessors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="address" class="tsd-anchor"></a>
+					<h3>address</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> address<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/IO/GpioBase.ts#L268">src/lib/IO/GpioBase.ts:268</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the pin address.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>property</dt>
+									<dd></dd>
+									<dt>readonly</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="innerpin" class="tsd-anchor"></a>
+					<h3>inner<wbr>Pin</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> innerPin<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../enums/_lib_io_gpiopins_.gpiopins.html" class="tsd-signature-type">GpioPins</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/IO/GpioBase.ts#L158">src/lib/IO/GpioBase.ts:158</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the physical pin being represented by this instance.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>property</dt>
+									<dd></dd>
+									<dt>readonly</dt>
+									<dd></dd>
+									<dt>override</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../enums/_lib_io_gpiopins_.gpiopins.html" class="tsd-signature-type">GpioPins</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="isdisposed" class="tsd-anchor"></a>
+					<h3>is<wbr>Disposed</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> isDisposed<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/IO/GpioBase.ts#L77">src/lib/IO/GpioBase.ts:77</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets whether or not this instance has been disposed.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>property</dt>
+									<dd></dd>
+									<dt>readonly</dt>
+									<dd></dd>
+									<dt>override</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class">
+					<a name="mode" class="tsd-anchor"></a>
+					<h3>mode</h3>
+					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> mode<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../enums/_lib_io_pinmode_.pinmode.html" class="tsd-signature-type">PinMode</a></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> mode<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="../enums/_lib_io_pinmode_.pinmode.html" class="tsd-signature-type">PinMode</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/IO/GpioBase.ts#L168">src/lib/IO/GpioBase.ts:168</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets or sets the pin mode.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>property</dt>
+									<dd></dd>
+									<dt>override</dt>
+									<dd></dd>
+									<dt>throws</dt>
+									<dd><p><a href="_lib_objectdisposedexception_.objectdisposedexception.html">ObjectDisposedException</a> if this instance has been disposed.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../enums/_lib_io_pinmode_.pinmode.html" class="tsd-signature-type">PinMode</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/IO/GpioBase.ts#L172">src/lib/IO/GpioBase.ts:172</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets or sets the pin mode.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>value: <a href="../enums/_lib_io_pinmode_.pinmode.html" class="tsd-signature-type">PinMode</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="pinname" class="tsd-anchor"></a>
+					<h3>pin<wbr>Name</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> pinName<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/IO/GpioBase.ts#L148">src/lib/IO/GpioBase.ts:148</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the pin name.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>property</dt>
+									<dd></dd>
+									<dt>readonly</dt>
+									<dd></dd>
+									<dt>override</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="pwm" class="tsd-anchor"></a>
+					<h3>pwm</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> pwm<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/IO/GpioBase.ts#L200">src/lib/IO/GpioBase.ts:200</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets or sets the PWM (Pulse-Width Modulation) value.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>property</dt>
+									<dd></dd>
+									<dt>override</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class">
+					<a name="pwmrange" class="tsd-anchor"></a>
+					<h3>pwm<wbr>Range</h3>
+					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> pwmRange<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> pwmRange<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/IO/GpioBase.ts#L209">src/lib/IO/GpioBase.ts:209</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets or sets the PWM range.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>property</dt>
+									<dd></dd>
+									<dt>override</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/IO/GpioBase.ts#L213">src/lib/IO/GpioBase.ts:213</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets or sets the PWM range.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>value: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="revision" class="tsd-anchor"></a>
+					<h3>revision</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> revision<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../enums/_lib_boardrevision_.boardrevision.html" class="tsd-signature-type">BoardRevision</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/IO/GpioBase.ts#L127">src/lib/IO/GpioBase.ts:127</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the board revision.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>property</dt>
+									<dd></dd>
+									<dt>readonly</dt>
+									<dd></dd>
+									<dt>override</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../enums/_lib_boardrevision_.boardrevision.html" class="tsd-signature-type">BoardRevision</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="state" class="tsd-anchor"></a>
+					<h3>state</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> state<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../enums/_lib_io_pinstate_.pinstate.html" class="tsd-signature-type">PinState</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/IO/GpioBase.ts#L137">src/lib/IO/GpioBase.ts:137</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the pin state.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>property</dt>
+									<dd></dd>
+									<dt>readonly</dt>
+									<dd></dd>
+									<dt>override</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../enums/_lib_io_pinstate_.pinstate.html" class="tsd-signature-type">PinState</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class">
+					<a name="tag" class="tsd-anchor"></a>
+					<h3>tag</h3>
+					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> tag<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> tag<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/IO/GpioBase.ts#L187">src/lib/IO/GpioBase.ts:187</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets or sets the tag.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>property</dt>
+									<dd></dd>
+									<dt>override</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/IO/GpioBase.ts#L191">src/lib/IO/GpioBase.ts:191</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets or sets the tag.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>value: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="addlistener" class="tsd-anchor"></a>
+					<h3>add<wbr>Listener</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Listener<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from EventEmitter.addListener</p>
+								<p>Overrides EventEmitter.addListener</p>
+								<ul>
+									<li>Defined in node_modules/@types/node/events.d.ts:20</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>event: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span></h5>
+								</li>
+								<li>
+									<h5>listener: <span class="tsd-signature-type">function</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-siganture">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="addpinstatechangelistener" class="tsd-anchor"></a>
+					<h3>add<wbr>Pin<wbr>State<wbr>Change<wbr>Listener</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Pin<wbr>State<wbr>Change<wbr>Listener<span class="tsd-signature-symbol">(</span>listener<span class="tsd-signature-symbol">: </span><a href="../modules/_lib_io_pinstatechangeevent_.html#pinstatechangeeventcallback" class="tsd-signature-type">PinStateChangeEventCallback</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_lib_io_pinstatechangeevent_.ipinstatechangeeventsubscription.html" class="tsd-signature-type">IPinStateChangeEventSubscription</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_lib_io_iraspigpio_.iraspigpio.html">IRaspiGpio</a>.<a href="../interfaces/_lib_io_iraspigpio_.iraspigpio.html#addpinstatechangelistener">addPinStateChangeListener</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/IO/GpioBase.ts#L86">src/lib/IO/GpioBase.ts:86</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Attaches a listener (callback) for the pin state change event.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p><a href="_lib_objectdisposedexception_.objectdisposedexception.html">ObjectDisposedException</a> if this instance has been disposed.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>listener: <a href="../modules/_lib_io_pinstatechangeevent_.html#pinstatechangeeventcallback" class="tsd-signature-type">PinStateChangeEventCallback</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The event listener to register.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_lib_io_pinstatechangeevent_.ipinstatechangeeventsubscription.html" class="tsd-signature-type">IPinStateChangeEventSubscription</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="changeboardrevision" class="tsd-anchor"></a>
+					<h3>change<wbr>Board<wbr>Revision</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">change<wbr>Board<wbr>Revision<span class="tsd-signature-symbol">(</span>revision<span class="tsd-signature-symbol">: </span><a href="../enums/_lib_boardrevision_.boardrevision.html" class="tsd-signature-type">BoardRevision</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/IO/GpioBase.ts#L103">src/lib/IO/GpioBase.ts:103</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Changes the default board revision.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>revision: <a href="../enums/_lib_boardrevision_.boardrevision.html" class="tsd-signature-type">BoardRevision</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The revision to set.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="dispose" class="tsd-anchor"></a>
+					<h3>dispose</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">dispose<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_lib_io_iraspigpio_.iraspigpio.html">IRaspiGpio</a>.<a href="../interfaces/_lib_io_iraspigpio_.iraspigpio.html#dispose">dispose</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/IO/GpioBase.ts#L301">src/lib/IO/GpioBase.ts:301</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Performs application-defined tasks associated with freeing,
+									releasing, or resetting resources.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>override</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="emit" class="tsd-anchor"></a>
+					<h3>emit</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">emit<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span>, <span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from EventEmitter.emit</p>
+								<p>Overrides EventEmitter.emit</p>
+								<ul>
+									<li>Defined in node_modules/@types/node/events.d.ts:32</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>event: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="eventnames" class="tsd-anchor"></a>
+					<h3>event<wbr>Names</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">event<wbr>Names<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from EventEmitter.eventNames</p>
+								<p>Overrides EventEmitter.eventNames</p>
+								<ul>
+									<li>Defined in node_modules/@types/node/events.d.ts:33</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getinitialpinvalue" class="tsd-anchor"></a>
+					<h3>get<wbr>Initial<wbr>Pin<wbr>Value</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Initial<wbr>Pin<wbr>Value<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../enums/_lib_io_pinstate_.pinstate.html" class="tsd-signature-type">PinState</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/IO/GpioBase.ts#L292">src/lib/IO/GpioBase.ts:292</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the initial pin value (the value set in the constructor).</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../enums/_lib_io_pinstate_.pinstate.html" class="tsd-signature-type">PinState</a></h4>
+							<p>The initial pin state value.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="getmaxlisteners" class="tsd-anchor"></a>
+					<h3>get<wbr>Max<wbr>Listeners</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Max<wbr>Listeners<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from EventEmitter.getMaxListeners</p>
+								<p>Overrides EventEmitter.getMaxListeners</p>
+								<ul>
+									<li>Defined in node_modules/@types/node/events.d.ts:29</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="listenercount" class="tsd-anchor"></a>
+					<h3>listener<wbr>Count</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">listener<wbr>Count<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from EventEmitter.listenerCount</p>
+								<p>Overrides EventEmitter.listenerCount</p>
+								<ul>
+									<li>Defined in node_modules/@types/node/events.d.ts:34</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>type: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="listeners" class="tsd-anchor"></a>
+					<h3>listeners</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">listeners<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from EventEmitter.listeners</p>
+								<p>Overrides EventEmitter.listeners</p>
+								<ul>
+									<li>Defined in node_modules/@types/node/events.d.ts:30</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>event: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Function</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="off" class="tsd-anchor"></a>
+					<h3>off</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">off<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from EventEmitter.off</p>
+								<p>Overrides EventEmitter.off</p>
+								<ul>
+									<li>Defined in node_modules/@types/node/events.d.ts:26</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>event: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span></h5>
+								</li>
+								<li>
+									<h5>listener: <span class="tsd-signature-type">function</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-siganture">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="on" class="tsd-anchor"></a>
+					<h3>on</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from EventEmitter.on</p>
+								<p>Overrides EventEmitter.on</p>
+								<ul>
+									<li>Defined in node_modules/@types/node/events.d.ts:21</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>event: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span></h5>
+								</li>
+								<li>
+									<h5>listener: <span class="tsd-signature-type">function</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-siganture">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="onpinstatechange" class="tsd-anchor"></a>
+					<h3>on<wbr>Pin<wbr>State<wbr>Change</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Pin<wbr>State<wbr>Change<span class="tsd-signature-symbol">(</span>psce<span class="tsd-signature-symbol">: </span><a href="_lib_io_pinstatechangeevent_.pinstatechangeevent.html" class="tsd-signature-type">PinStateChangeEvent</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_lib_io_iraspigpio_.iraspigpio.html">IRaspiGpio</a>.<a href="../interfaces/_lib_io_iraspigpio_.iraspigpio.html#onpinstatechange">onPinStateChange</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/IO/GpioBase.ts#L113">src/lib/IO/GpioBase.ts:113</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Notifies event listeners that the pin state has changed.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p><a href="_lib_objectdisposedexception_.objectdisposedexception.html">ObjectDisposedException</a> if this instance has been disposed.</p>
+									</dd>
+									<dt>override</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>psce: <a href="_lib_io_pinstatechangeevent_.pinstatechangeevent.html" class="tsd-signature-type">PinStateChangeEvent</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The pin state change event info.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="once" class="tsd-anchor"></a>
+					<h3>once</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">once<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from EventEmitter.once</p>
+								<p>Overrides EventEmitter.once</p>
+								<ul>
+									<li>Defined in node_modules/@types/node/events.d.ts:22</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>event: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span></h5>
+								</li>
+								<li>
+									<h5>listener: <span class="tsd-signature-type">function</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-siganture">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="prependlistener" class="tsd-anchor"></a>
+					<h3>prepend<wbr>Listener</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">prepend<wbr>Listener<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from EventEmitter.prependListener</p>
+								<p>Overrides EventEmitter.prependListener</p>
+								<ul>
+									<li>Defined in node_modules/@types/node/events.d.ts:23</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>event: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span></h5>
+								</li>
+								<li>
+									<h5>listener: <span class="tsd-signature-type">function</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-siganture">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="prependoncelistener" class="tsd-anchor"></a>
+					<h3>prepend<wbr>Once<wbr>Listener</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">prepend<wbr>Once<wbr>Listener<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from EventEmitter.prependOnceListener</p>
+								<p>Overrides EventEmitter.prependOnceListener</p>
+								<ul>
+									<li>Defined in node_modules/@types/node/events.d.ts:24</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>event: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span></h5>
+								</li>
+								<li>
+									<h5>listener: <span class="tsd-signature-type">function</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-siganture">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="provision" class="tsd-anchor"></a>
+					<h3>provision</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">provision<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_lib_io_iraspigpio_.iraspigpio.html">IRaspiGpio</a>.<a href="../interfaces/_lib_io_iraspigpio_.iraspigpio.html#provision">provision</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/IO/GpioBase.ts#L259">src/lib/IO/GpioBase.ts:259</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Provisions the I/O pin. See <a href="http://wiringpi.com/reference/raspberry-pi-specifics/">http://wiringpi.com/reference/raspberry-pi-specifics/</a></p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p><a href="_lib_objectdisposedexception_.objectdisposedexception.html">ObjectDisposedException</a> if this instance has been disposed.</p>
+									</dd>
+									<dt>override</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="pulse" class="tsd-anchor"></a>
+					<h3>pulse</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">pulse<span class="tsd-signature-symbol">(</span>millis<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_lib_io_iraspigpio_.iraspigpio.html">IRaspiGpio</a>.<a href="../interfaces/_lib_io_iraspigpio_.iraspigpio.html#pulse">pulse</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/IO/GpioBase.ts#L278">src/lib/IO/GpioBase.ts:278</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Pulse the pin output for the specified number of milliseconds.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p><a href="_lib_objectdisposedexception_.objectdisposedexception.html">ObjectDisposedException</a> if this instance has been disposed.</p>
+									</dd>
+									<dt>override</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>millis: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The number of milliseconds to wait between states.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="rawlisteners" class="tsd-anchor"></a>
+					<h3>raw<wbr>Listeners</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">raw<wbr>Listeners<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from EventEmitter.rawListeners</p>
+								<p>Overrides EventEmitter.rawListeners</p>
+								<ul>
+									<li>Defined in node_modules/@types/node/events.d.ts:31</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>event: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Function</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="read" class="tsd-anchor"></a>
+					<h3>read</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">read<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../enums/_lib_io_pinstate_.pinstate.html" class="tsd-signature-type">PinState</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_lib_io_iraspigpio_.iraspigpio.html">IRaspiGpio</a>.<a href="../interfaces/_lib_io_iraspigpio_.iraspigpio.html#read">read</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/IO/GpioBase.ts#L246">src/lib/IO/GpioBase.ts:246</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the value (state) of the pin.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p><a href="_lib_objectdisposedexception_.objectdisposedexception.html">ObjectDisposedException</a> if this instance has been disposed.</p>
+									</dd>
+									<dt>override</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../enums/_lib_io_pinstate_.pinstate.html" class="tsd-signature-type">PinState</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>The pin state.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="removealllisteners" class="tsd-anchor"></a>
+					<h3>remove<wbr>All<wbr>Listeners</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>All<wbr>Listeners<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from EventEmitter.removeAllListeners</p>
+								<p>Overrides EventEmitter.removeAllListeners</p>
+								<ul>
+									<li>Defined in node_modules/@types/node/events.d.ts:27</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> event: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="removelistener" class="tsd-anchor"></a>
+					<h3>remove<wbr>Listener</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Listener<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from EventEmitter.removeListener</p>
+								<p>Overrides EventEmitter.removeListener</p>
+								<ul>
+									<li>Defined in node_modules/@types/node/events.d.ts:25</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>event: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span></h5>
+								</li>
+								<li>
+									<h5>listener: <span class="tsd-signature-type">function</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-siganture">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="setmaxlisteners" class="tsd-anchor"></a>
+					<h3>set<wbr>Max<wbr>Listeners</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Max<wbr>Listeners<span class="tsd-signature-symbol">(</span>n<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from EventEmitter.setMaxListeners</p>
+								<p>Overrides EventEmitter.setMaxListeners</p>
+								<ul>
+									<li>Defined in node_modules/@types/node/events.d.ts:28</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>n: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setpwm" class="tsd-anchor"></a>
+					<h3>set<wbr>Pwm</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Pwm<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_lib_io_iraspigpio_.iraspigpio.html">IRaspiGpio</a>.<a href="../interfaces/_lib_io_iraspigpio_.iraspigpio.html#setpwm">setPwm</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/IO/GpioBase.ts#L222">src/lib/IO/GpioBase.ts:222</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets the PWM value.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>override</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>value: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The value to set.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="write" class="tsd-anchor"></a>
+					<h3>write</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">write<span class="tsd-signature-symbol">(</span>ps<span class="tsd-signature-symbol">: </span><a href="../enums/_lib_io_pinstate_.pinstate.html" class="tsd-signature-type">PinState</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_lib_io_iraspigpio_.iraspigpio.html">IRaspiGpio</a>.<a href="../interfaces/_lib_io_iraspigpio_.iraspigpio.html#write">write</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/14efde0/src/lib/IO/GpioBase.ts#L232">src/lib/IO/GpioBase.ts:232</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Write a value to the pin.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p><a href="_lib_objectdisposedexception_.objectdisposedexception.html">ObjectDisposedException</a> if this instance has been disposed.</p>
+									</dd>
+									<dt>override</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>ps: <a href="../enums/_lib_io_pinstate_.pinstate.html" class="tsd-signature-type">PinState</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The pin state value to write to the pin.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+					<a name="listenercount-1" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> listener<wbr>Count</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">listener<wbr>Count<span class="tsd-signature-symbol">(</span>emitter<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EventEmitter</span>, event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from EventEmitter.listenerCount</p>
+								<ul>
+									<li>Defined in node_modules/@types/node/events.d.ts:17</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>deprecated</dt>
+									<dd><p>since v4.0.0</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>emitter: <span class="tsd-signature-type">EventEmitter</span></h5>
+								</li>
+								<li>
+									<h5>event: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-external-module">
+						<a href="../modules/_lib_io_gpiobase_.html">&quot;lib/IO/<wbr>Gpio<wbr>Base&quot;</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_lib_io_gpiobase_.gpiobase.html" class="tsd-kind-icon">Gpio<wbr>Base</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="_lib_io_gpiobase_.gpiobase.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-event tsd-parent-kind-class tsd-is-static">
+								<a href="_lib_io_gpiobase_.gpiobase.html#event_state_changed" class="tsd-kind-icon">EVENT_<wbr>STATE_<wbr>CHANGED</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_lib_io_gpiobase_.gpiobase.html#boardrevision" class="tsd-kind-icon">board<wbr>Revision</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_lib_io_gpiobase_.gpiobase.html#disposed" class="tsd-kind-icon">disposed</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_lib_io_gpiobase_.gpiobase.html#initvalue" class="tsd-kind-icon">init<wbr>Value</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_lib_io_gpiobase_.gpiobase.html#pin" class="tsd-kind-icon">pin</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_lib_io_gpiobase_.gpiobase.html#pinmode" class="tsd-kind-icon">pin<wbr>Mode</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="_lib_io_gpiobase_.gpiobase.html#pinpwm" class="tsd-kind-icon">pin<wbr>Pwm</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="_lib_io_gpiobase_.gpiobase.html#pinpwmrange" class="tsd-kind-icon">pin<wbr>Pwm<wbr>Range</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="_lib_io_gpiobase_.gpiobase.html#pinstate" class="tsd-kind-icon">pin<wbr>State</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_lib_io_gpiobase_.gpiobase.html#pintag" class="tsd-kind-icon">pin<wbr>Tag</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+								<a href="_lib_io_gpiobase_.gpiobase.html#defaultmaxlisteners" class="tsd-kind-icon">default<wbr>Max<wbr>Listeners</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="_lib_io_gpiobase_.gpiobase.html#address" class="tsd-kind-icon">address</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="_lib_io_gpiobase_.gpiobase.html#innerpin" class="tsd-kind-icon">inner<wbr>Pin</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="_lib_io_gpiobase_.gpiobase.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a>
+							</li>
+							<li class=" tsd-kind-accessor tsd-parent-kind-class">
+								<a href="_lib_io_gpiobase_.gpiobase.html#mode" class="tsd-kind-icon">mode</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="_lib_io_gpiobase_.gpiobase.html#pinname" class="tsd-kind-icon">pin<wbr>Name</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="_lib_io_gpiobase_.gpiobase.html#pwm" class="tsd-kind-icon">pwm</a>
+							</li>
+							<li class=" tsd-kind-accessor tsd-parent-kind-class">
+								<a href="_lib_io_gpiobase_.gpiobase.html#pwmrange" class="tsd-kind-icon">pwm<wbr>Range</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="_lib_io_gpiobase_.gpiobase.html#revision" class="tsd-kind-icon">revision</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="_lib_io_gpiobase_.gpiobase.html#state" class="tsd-kind-icon">state</a>
+							</li>
+							<li class=" tsd-kind-accessor tsd-parent-kind-class">
+								<a href="_lib_io_gpiobase_.gpiobase.html#tag" class="tsd-kind-icon">tag</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_lib_io_gpiobase_.gpiobase.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_lib_io_gpiobase_.gpiobase.html#addpinstatechangelistener" class="tsd-kind-icon">add<wbr>Pin<wbr>State<wbr>Change<wbr>Listener</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_lib_io_gpiobase_.gpiobase.html#changeboardrevision" class="tsd-kind-icon">change<wbr>Board<wbr>Revision</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_lib_io_gpiobase_.gpiobase.html#dispose" class="tsd-kind-icon">dispose</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_lib_io_gpiobase_.gpiobase.html#emit" class="tsd-kind-icon">emit</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_lib_io_gpiobase_.gpiobase.html#eventnames" class="tsd-kind-icon">event<wbr>Names</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_lib_io_gpiobase_.gpiobase.html#getinitialpinvalue" class="tsd-kind-icon">get<wbr>Initial<wbr>Pin<wbr>Value</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_lib_io_gpiobase_.gpiobase.html#getmaxlisteners" class="tsd-kind-icon">get<wbr>Max<wbr>Listeners</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_lib_io_gpiobase_.gpiobase.html#listenercount" class="tsd-kind-icon">listener<wbr>Count</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_lib_io_gpiobase_.gpiobase.html#listeners" class="tsd-kind-icon">listeners</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_lib_io_gpiobase_.gpiobase.html#off" class="tsd-kind-icon">off</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_lib_io_gpiobase_.gpiobase.html#on" class="tsd-kind-icon">on</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_lib_io_gpiobase_.gpiobase.html#onpinstatechange" class="tsd-kind-icon">on<wbr>Pin<wbr>State<wbr>Change</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_lib_io_gpiobase_.gpiobase.html#once" class="tsd-kind-icon">once</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_lib_io_gpiobase_.gpiobase.html#prependlistener" class="tsd-kind-icon">prepend<wbr>Listener</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_lib_io_gpiobase_.gpiobase.html#prependoncelistener" class="tsd-kind-icon">prepend<wbr>Once<wbr>Listener</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_lib_io_gpiobase_.gpiobase.html#provision" class="tsd-kind-icon">provision</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_lib_io_gpiobase_.gpiobase.html#pulse" class="tsd-kind-icon">pulse</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_lib_io_gpiobase_.gpiobase.html#rawlisteners" class="tsd-kind-icon">raw<wbr>Listeners</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_lib_io_gpiobase_.gpiobase.html#read" class="tsd-kind-icon">read</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_lib_io_gpiobase_.gpiobase.html#removealllisteners" class="tsd-kind-icon">remove<wbr>All<wbr>Listeners</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_lib_io_gpiobase_.gpiobase.html#removelistener" class="tsd-kind-icon">remove<wbr>Listener</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_lib_io_gpiobase_.gpiobase.html#setmaxlisteners" class="tsd-kind-icon">set<wbr>Max<wbr>Listeners</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_lib_io_gpiobase_.gpiobase.html#setpwm" class="tsd-kind-icon">set<wbr>Pwm</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_lib_io_gpiobase_.gpiobase.html#write" class="tsd-kind-icon">write</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+								<a href="_lib_io_gpiobase_.gpiobase.html#listenercount-1" class="tsd-kind-icon">listener<wbr>Count</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>
