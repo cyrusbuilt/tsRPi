@@ -3,9 +3,8 @@ import { mocked } from 'ts-jest/utils';
 import ExecUtils from '../../src/lib/ExecUtils';
 import GpioTransferProviderStandard from '../../src/lib/LCD/GpioTransferProviderStandard';
 import LcdModule from '../../src/lib/LCD/LcdModule';
-import IllegalArgumentException from '../../src/lib/IllegalArgumentException';
 import ObjectDisposedException from '../../src/lib/ObjectDisposedException';
-import { GpioPins, PinState } from '../../src/lib/IO';
+import { GpioPins } from '../../src/lib/IO';
 
 jest.mock('fs');
 jest.mock('../../src/lib/ExecUtils');
