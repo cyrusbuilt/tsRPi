@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "outDir": "./build",
+        "strict": true,
+        "jsx": "react",
+        "allowJs": true,
+        "sourceMap": true,
+        "esModuleInterop": true
+    },
+    "include": ["src"],
+    "exclude": ["node_modules", "**/__tests__/*"],
+    "typedocOptions": {
+        "mode": "modules",
+        "out": "doc",
+        "logger": "console"
+    }
+}

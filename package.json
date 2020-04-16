@@ -1,0 +1,64 @@
+{
+  "name": "tsrpi",
+  "version": "1.0.0",
+  "description": "Raspberry Pi framework for TypeScript / NodeJS",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "test": "jest --config jestconfig.json",
+    "coveralls": "jest --config jestconfig.json && cat ./coverage/lcov.info | coveralls",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json --fix",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run format && npm run lint",
+    "preversion": "npm run lint",
+    "docs": "typedoc --tsconfig ./tsconfig.json --out ./doc ./src",
+    "clean": "rm -rfv ./build && rm -rfv ./doc && rm -rfv ./dist && rm -rfv ./coverage",
+    "bundle": "webpack --config ./webpack.config.js",
+    "build-all": "npm run clean && npm run format && npm run lint && npm run test && npm run build && npm run docs && npm run bundle",
+    "build-ci": "npm run format && npm run lint && npm run coveralls && npm run build && npm run docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cyrusbuilt/tsRPi.git"
+  },
+  "keywords": [
+    "Raspberry",
+    "Pi"
+  ],
+  "author": "cyrusbuilt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cyrusbuilt/tsRPi/issues"
+  },
+  "homepage": "https://github.com/cyrusbuilt/tsRPi#readme",
+  "devDependencies": {
+    "@types/jest": "^24.9.1",
+    "coveralls": "^3.0.11",
+    "jest": "^25.3.0",
+    "jest-diff": "^24.9.0",
+    "prettier": "^1.19.1",
+    "ts-jest": "^24.3.0",
+    "ts-loader": "^6.2.2",
+    "tslint": "^5.20.1",
+    "tslint-config-prettier": "^1.18.0",
+    "typedoc": "^0.15.8",
+    "typescript": "^3.8.3",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "dependencies": {
+    "@babel/parser": "^7.9.4",
+    "@babel/types": "^7.9.5",
+    "@types/convert-string": "^0.1.0",
+    "@types/i2c-bus": "^1.0.27",
+    "@types/node": "^12.12.35",
+    "@types/pi-spi": "0.0.28",
+    "@types/serialport": "^7.0.5",
+    "i2c-bus": "^5.1.0",
+    "pi-spi": "^1.2.1",
+    "serialport": "^8.0.7"
+  }
+}
