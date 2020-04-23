@@ -7,7 +7,7 @@ export default class Coreutils {
    * specified time period in milliseconds using a Promise.
    * @param ms The time delay in milliseconds.
    */
-  public static delay = (ms: number) => new Promise(res => setTimeout(res, ms));
+  public static delay = (ms: number) => new Promise((res) => setTimeout(res, ms));
 
   /**
    * Asynchronous sleep method. Delays execution for the specified number of

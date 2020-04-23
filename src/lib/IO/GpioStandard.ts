@@ -101,7 +101,7 @@ export default class GpioStandard extends GpioBase {
     if (this.pinPwm !== value) {
       this.pinPwm = value;
       let cmd: string = '';
-      const cmds: Array<Promise<string[]>> = [];
+      const cmds: Promise<string[]>[] = [];
       if (!this.isPwmPin) {
         // We may have to change mode first.
         cmd = `gpio mode ${GpioPins[this.innerPin]} pwm`;

@@ -9,7 +9,6 @@ import ButtonComponent from '../../../src/lib/Components/Buttons/ButtonComponent
 import { ButtonState } from '../../../src/lib/Components/Buttons/ButtonState';
 import ButtonEvent from '../../../src/lib/Components/Buttons/ButtonEvent';
 import GpioStandard from '../../../src/lib/IO/GpioStandard';
-import Coreutils from '../../../src/lib/PiSystem/CoreUtils';
 import InvalidOperationException from '../../../src/lib/InvalidOperationException';
 
 jest.mock('fs');
