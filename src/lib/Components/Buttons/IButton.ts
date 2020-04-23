@@ -36,19 +36,19 @@ export default interface IButton extends IComponent {
    * Gets a value indicating whether this instance is pressed.
    * @readonly
    */
-  isPressed: boolean;
+  readonly isPressed: boolean;
 
   /**
    * Gets a value indicating whether the button is released.
    * @readonly
    */
-  isReleased: boolean;
+  readonly isReleased: boolean;
 
   /**
    * Gets the button state.
    * @readonly
    */
-  state: ButtonState;
+  readonly state: ButtonState;
 
   /**
    * Checks to see if the button is in a state matching the specified state.

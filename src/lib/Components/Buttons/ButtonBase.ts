@@ -52,8 +52,10 @@ export default abstract class ButtonBase extends ComponentBase implements IButto
   }
 
   /**
-   *
-   * @param listener
+   * Adds an event listener for the button state event.
+   * @param listener The event handler callback.
+   * @returns An event subscription object.
+   * @throws [[ObjectDisposeException]] if this instance has been disposed.
    */
   public addButtonStateEventListener(listener: ButtonStateChangeEventCallback) {
     if (this.isDisposed) {
