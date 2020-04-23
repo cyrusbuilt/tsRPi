@@ -36,8 +36,8 @@ export default class NetworkInfo {
 
     const ifaces = OS.networkInterfaces();
 
-    Object.keys(ifaces).forEach(ifname => {
-      ifaces[ifname]?.forEach(iface => {
+    Object.keys(ifaces).forEach((ifname) => {
+      ifaces[ifname]?.forEach((iface) => {
         if ((iface.family !== 'IPv4' && iface.family !== 'IPv6') || !iface.internal) {
           return;
         }
