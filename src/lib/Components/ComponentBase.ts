@@ -6,7 +6,7 @@ import IComponent from './IComponent';
  * @extends [[EventEmitter.EventEmitter]]
  * @implements [[IComponent]]
  */
-export default class ComponentBase extends EventEmitter.EventEmitter implements IComponent {
+export default class ComponentBase extends EventEmitter implements IComponent {
   /**
    * Gets or sets the name of this component.
    * @override

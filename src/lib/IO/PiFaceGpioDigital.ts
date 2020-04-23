@@ -456,7 +456,7 @@ export default class PiFaceGpioDigital extends PiFaceGpioBase {
     }
 
     this.cancelPoll();
-    this.spi.close(err => {
+    this.spi.close((err) => {
       console.log(err);
     });
     super.dispose();

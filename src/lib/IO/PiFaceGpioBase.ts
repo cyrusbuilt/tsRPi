@@ -15,7 +15,7 @@ import PinStateChangeEvent, {
  * @extends [[EventEmitter.EventEmitter]]
  * @implements [[IPiFaceGPIO]]
  */
-export default abstract class PiFaceGpioBase extends EventEmitter.EventEmitter implements IPiFaceGPIO {
+export default abstract class PiFaceGpioBase extends EventEmitter implements IPiFaceGPIO {
   /**
    * The pin state change event name.
    * @event
