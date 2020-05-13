@@ -1,6 +1,10 @@
 import MotorBase from './MotorBase';
 import IStepperMotor, { StepperMotorEvents } from './IStepperMotor';
-import MotorRotateEvent, { MotorRotateEventCallback, IMotorRotateEventSubscription, MotorDirectionChangeEventCallback } from './MotorRotateEvent';
+import MotorRotateEvent, {
+  MotorRotateEventCallback,
+  IMotorRotateEventSubscription,
+  MotorDirectionChangeEventCallback,
+} from './MotorRotateEvent';
 import ObjectDisposedException from '../../ObjectDisposedException';
 
 /**
@@ -72,16 +76,16 @@ export default abstract class SteppMotorBase extends MotorBase implements IStepp
    * @throws [[ObjectDisposedException]] if this instance has been disposed.
    */
   public addRotationEventListener(listener: MotorRotateEventCallback) {
-      if (this.isDisposed) {
-          throw new ObjectDisposedException('StepperMotorBase');
-      }
+    if (this.isDisposed) {
+      throw new ObjectDisposedException('StepperMotorBase');
+    }
 
-      const evt = this.on(StepperMotorEvents.ROTATION_STARTED, listener);
-      return {
-        remove() {
-            evt.removeListener(StepperMotorEvents.ROTATION_STARTED, listener);
-        }
-      } as IMotorRotateEventSubscription;
+    const evt = this.on(StepperMotorEvents.ROTATION_STARTED, listener);
+    return {
+      remove() {
+        evt.removeListener(StepperMotorEvents.ROTATION_STARTED, listener);
+      },
+    } as IMotorRotateEventSubscription;
   }
 
   /**
@@ -91,14 +95,14 @@ export default abstract class SteppMotorBase extends MotorBase implements IStepp
    */
   public addRotationStoppedEventListener(listener: MotorDirectionChangeEventCallback) {
     if (this.isDisposed) {
-        throw new ObjectDisposedException('StepperMotorBase');
+      throw new ObjectDisposedException('StepperMotorBase');
     }
 
     const evt = this.on(StepperMotorEvents.ROTATION_STOPPED, listener);
     return {
       remove() {
-          evt.removeListener(StepperMotorEvents.ROTATION_STOPPED, listener);
-      }
+        evt.removeListener(StepperMotorEvents.ROTATION_STOPPED, listener);
+      },
     } as IMotorRotateEventSubscription;
   }
 

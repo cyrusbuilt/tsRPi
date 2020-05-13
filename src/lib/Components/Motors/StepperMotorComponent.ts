@@ -109,7 +109,7 @@ export default class StepperMotorComponent extends SteppMotorBase {
     this.onRotationStarted(evt);
     let totalSteps = steps;
     if (steps < 0) {
-        totalSteps = 2 * -steps;
+      totalSteps = 2 * -steps;
     }
 
     for (let i = 0; i < totalSteps; i++) {
@@ -178,13 +178,13 @@ export default class StepperMotorComponent extends SteppMotorBase {
 
     const millis = this.stepIntervalMillis;
     const nanos = this.stepIntervalNanos;
-    const waitTime = millis + (nanos * 1000000);
+    const waitTime = millis + nanos * 1000000;
     if (waitTime > 0) {
-        //console.log("Sleep time = " + waitTime);
-        //await Coreutils.sleepMicroseconds(waitTime);
-        // TODO any amount of wait time causes the callback to take too long.
-        // Which causes jest to fail. Need to understand what is causing the
-        // timeout. Maybe we don't need this delay??
+      // console.log("Sleep time = " + waitTime);
+      // await Coreutils.sleepMicroseconds(waitTime);
+      // TODO any amount of wait time causes the callback to take too long.
+      // Which causes jest to fail. Need to understand what is causing the
+      // timeout. Maybe we don't need this delay??
     }
   }
 
