@@ -5,3 +5,4 @@ export * from './Buzzers';
 export * from './Gyroscope';
 export * from './LcdDisplay';
 export * from './Lights';
+export * from './Motors';

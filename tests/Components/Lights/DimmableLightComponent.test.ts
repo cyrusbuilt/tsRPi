@@ -7,7 +7,6 @@ import { PinMode } from '../../../src/lib/IO/PinMode';
 import { PinState } from '../../../src/lib/IO/PinState';
 import ObjectDisposedException from '../../../src/lib/ObjectDisposedException';
 import GpioStandard from '../../../src/lib/IO/GpioStandard';
-import InvalidOperationException from '../../../src/lib/InvalidOperationException';
 import LightStateChangeEvent from '../../../src/lib/Components/Lights/LightStateChangeEvent';
 import LightLevelChangeEvent from '../../../src/lib/Components/Lights/LightLevelChangeEvent';
 
