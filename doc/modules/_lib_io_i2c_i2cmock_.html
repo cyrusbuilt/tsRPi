@@ -109,7 +109,7 @@
 					<div class="tsd-signature tsd-kind-icon">Buffer<wbr>Callback<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, bytesReadOrWritten<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, buffer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/0be9c07/src/lib/IO/I2C/I2cMock.ts#L6">src/lib/IO/I2C/I2cMock.ts:6</a></li>
+							<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/2ca1562/src/lib/IO/I2C/I2cMock.ts#L6">src/lib/IO/I2C/I2cMock.ts:6</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -146,7 +146,7 @@
 					<div class="tsd-signature tsd-kind-icon">Completion<wbr>Callback<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/0be9c07/src/lib/IO/I2C/I2cMock.ts#L4">src/lib/IO/I2C/I2cMock.ts:4</a></li>
+							<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/2ca1562/src/lib/IO/I2C/I2cMock.ts#L4">src/lib/IO/I2C/I2cMock.ts:4</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -177,7 +177,7 @@
 					<div class="tsd-signature tsd-kind-icon">Result<wbr>Callback&lt;T&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, result<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/0be9c07/src/lib/IO/I2C/I2cMock.ts#L8">src/lib/IO/I2C/I2cMock.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/2ca1562/src/lib/IO/I2C/I2cMock.ts#L8">src/lib/IO/I2C/I2cMock.ts:8</a></li>
 						</ul>
 					</aside>
 					<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -220,7 +220,7 @@
 					<div class="tsd-signature tsd-kind-icon">mock<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_lib_io_i2c_i2cmock_.i2cbus.html" class="tsd-signature-type">I2cBus</a><span class="tsd-signature-symbol"> = {close(callback: CompletionCallback): void {},closeSync(): void {},i2cFuncs(callback: ResultCallback&lt;I2cBusFuncs&gt;): void {},i2cFuncsSync(): I2cBusFuncs {return {} as I2cBusFuncs;},scan(callback: ResultCallback&lt;number[]&gt;): void {},scanSync(): number[] {return [];},i2cRead(address: number, length: number, buffer: Buffer, callback: BufferCallback): void {buffer.fill(1, 0, length - 1);callback(null, length, buffer);},i2cReadSync(address: number, length: number, buffer: Buffer): number {buffer.fill(0x01, 0, length - 1);return length;},i2cWrite(address: number, length: number, buffer: Buffer, callback: BufferCallback): void {callback(null, length, buffer);},i2cWriteSync(address: number, length: number, buffer: Buffer): number {return length;},readByte(address: number, command: number, callback: ResultCallback&lt;number&gt;): void {callback(null, 1);},readByteSync(address: number, command: number): number {return 1;},readWord(address: number, command: number, callback: ResultCallback&lt;number&gt;): void {callback(null, 1);},readWordSync(address: number, command: number): number {return 1;},readI2cBlock(address: number, command: number, length: number, buffer: Buffer, callback: BufferCallback): void {buffer.fill(1, length - 1);callback(null, length, buffer);},readI2cBlockSync(address: number, command: number, length: number, buffer: Buffer): number {buffer.fill(1, length - 1);return length;},receiveByte(address: number, callback: ResultCallback&lt;number&gt;): void {callback(null, 1);},receiveByteSync(address: number): number {return 1;},sendByte(address: number, byte: number, callback: CompletionCallback): void {callback(null);},sendByteSync(address: number, byte: number): void {},writeByte(address: number, command: number, byte: number, callback: CompletionCallback): void {callback(null);},writeByteSync(address: number, command: number, byte: number): void {},writeWord(address: number, command: number, word: number, callback: CompletionCallback): void {callback(null);},writeWordSync(address: number, command: number, word: number): void {},writeQuick(address: number, command: number, bit: number, callback: CompletionCallback): void {callback(null);},writeQuickSync(address: number, command: number, bit: number): void {},writeI2cBlock(address: number, command: number, length: number, buffer: Buffer, callback: BufferCallback): void {callback(null, length, buffer);},writeI2cBlockSync(address: number, command: number, length: number, buffer: Buffer): number {return length;},} as I2cBus</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/0be9c07/src/lib/IO/I2C/I2cMock.ts#L373">src/lib/IO/I2C/I2cMock.ts:373</a></li>
+							<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/2ca1562/src/lib/IO/I2C/I2cMock.ts#L373">src/lib/IO/I2C/I2cMock.ts:373</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -237,7 +237,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/0be9c07/src/lib/IO/I2C/I2cMock.ts#L458">src/lib/IO/I2C/I2cMock.ts:458</a></li>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/2ca1562/src/lib/IO/I2C/I2cMock.ts#L458">src/lib/IO/I2C/I2cMock.ts:458</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -275,7 +275,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/0be9c07/src/lib/IO/I2C/I2cMock.ts#L471">src/lib/IO/I2C/I2cMock.ts:471</a></li>
+									<li>Defined in <a href="https://github.com/cyrusbuilt/tsRPi/blob/2ca1562/src/lib/IO/I2C/I2cMock.ts#L471">src/lib/IO/I2C/I2cMock.ts:471</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
