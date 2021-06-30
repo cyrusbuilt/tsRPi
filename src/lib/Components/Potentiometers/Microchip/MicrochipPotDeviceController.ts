@@ -69,7 +69,7 @@ export default class MicrochipPotDeviceController implements IDisposable {
       return;
     }
 
-    if (this.mDevice.isDisposed) {
+    if (!this.mDevice.isDisposed) {
       await this.mDevice.dispose();
     }
 

@@ -1,5 +1,4 @@
 import * as OS from 'os';
-import * as Util from 'util';
 import { BoardRevision } from '../../BoardRevision';
 import IllegalArgumentException from '../../IllegalArgumentException';
 import InvalidOperationException from '../../InvalidOperationException';
@@ -71,6 +70,9 @@ export default class I2CBus implements II2C {
       return;
     }
 
+    // TODO This is a shitty check. Raspberry Pi's aren't the only ARM-based systems.
+    // We need a better way to check if this is BOTH an ARM-based system AND has an
+    // accessible I2C bus AND is running Linux.
     if (OS.arch() === 'arm') {
       const busActual = await import('i2c-bus');
       this.bus = busActual.openSync(this.busId);
@@ -78,7 +80,7 @@ export default class I2CBus implements II2C {
       this.bus = I2CNativeMock.openSync(this.busId);
     }
 
-    if (Util.isNullOrUndefined(this.bus)) {
+    if (!this.bus) {
       throw new IOException(`Error opening bus ${this.busId}.`);
     }
 
@@ -95,7 +97,7 @@ export default class I2CBus implements II2C {
     }
 
     if (this.isOpen) {
-      if (!Util.isNullOrUndefined(this.bus)) {
+      if (this.bus) {
         this.bus.closeSync();
       }
 
